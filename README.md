@@ -1,2 +1,2 @@
 # config-files
-My customized configuration files for various things
+Configuration for various things
