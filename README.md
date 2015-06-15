@@ -6,9 +6,11 @@ Configuration for various things
 (far from complete, but customized for the .emacs file in this repo)
 
 C-x is Ctrl + x
+
 M-x is Alt + x
 
 close emacs - C-x C-c
+
 cancel current command - C-g
 
 
