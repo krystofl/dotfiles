@@ -12,6 +12,7 @@ Configuration for various things
 
 * install Chrome
 * install packages
+
     sudo apt-get install git emacs24 nvidia-current zsh pylint
 
 * fix privacy hole (https://fixubuntu.com/)
@@ -30,19 +31,23 @@ Set up the stuff from this repo.
 ### Set up zsh as the default shell
 
 Get Oh-My-Zsh:
+
     sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
 Copy over config files from this repo:
+
     cp .zshrc ~
     cp krystof.zsh-theme ~/.oh-my-zsh/themes
 
 Change the default shell to zsh:
+
     chsh -s $(which zsh)
 
 
 ### emacs
 
 Install flycheck:
+
     M-x package-install <RET> flycheck
 
 
