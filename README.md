@@ -1,66 +1,57 @@
-# config-files
+# dotfiles
 Configuration for various things
 
 
-## emacs usage notes
-(far from complete, but customized for the .emacs file in this repo)
 
-C-x is Ctrl + x
+# Things to do after installing ubuntu
 
-M-x is Alt + x
+* enable workspaces
+  (Appearance -> Behavior -> Enable workspaces)
+* change window menus to be in the window, not at the top title bar
+  (Appearance -> Behavior -> Show the menus for a window -> In the window's title bar)
 
-close emacs - C-x C-c
+* install Chrome
+* install packages
+    sudo apt-get install git emacs24 nvidia-current zsh pylint
 
-cancel current command - C-g
-
-
-### File Manipulation
-open file C-x C-f
-
-save file - C-x C-s
-
-close file - C-x k
-
-switch between .cpp and .h file: F7
-
-run make - F9
+* fix privacy hole (https://fixubuntu.com/)
+* add more workspaces (through Unity Tweak Tool, installed in above step)
+* change terminal background
 
 
-### Window Management
-split window vertically - C-x 3
 
-split window horizontally - C-x 2
+## dotfiles
 
-move between windows - Shift + arrow key
+Set up the stuff from this repo.
 
-close window: C-x 0
+    cp .bashrc .emacs .gdbinit .pylintrc .zshrc ~
 
 
-### Editing
-search file: C-s (forward) or C-r (backward)
+### Set up zsh as the default shell
 
-search & replace: Alt + Shift + 5
+Get Oh-My-Zsh:
+    sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
-set mark: C-space
+Copy over config files from this repo:
+    cp .zshrc ~
+    cp krystof.zsh-theme ~/.oh-my-zsh/themes
 
-undo: C-z
-
-auto-complete: Alt + Enter
-
-go to line: Alt + G
-
-
-### Packages
-open package manager: M-x list-packages
-
-mark for install: i
-
-unmark: u
-
-mark for deletion: d
-
-execute: x
+Change the default shell to zsh:
+    chsh -s $(which zsh)
 
 
-### Miscellaneous
-highlight misspelled words: M-x flyspell-mode
+### emacs
+
+Install flycheck:
+    M-x package-install <RET> flycheck
+
+
+### git
+
+    git config --global user.email "my@email.com"
+    git config --global user.name "Krystof Litomisky"
+    git config --global core.editor "emacs -nw"
+    git config --global push.default matching
+
+Make an ssh key & add it to github: https://help.github.com/articles/generating-ssh-keys/
+
