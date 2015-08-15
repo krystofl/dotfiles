@@ -13,11 +13,12 @@ Configuration for various things
 * install Chrome
 * install packages
 
-    sudo apt-get install git emacs24 nvidia-current zsh pylint
+        sudo apt-get install git emacs24 nvidia-current zsh pylint python-pip python3-pip synaptic
 
 * fix privacy hole (https://fixubuntu.com/)
 * add more workspaces (through Unity Tweak Tool, installed in above step)
-* change terminal background
+* change terminal background, enable unlimited scrolling
+* disable sound effects (settings -> sound -> sound effects -> mute)
 
 
 
