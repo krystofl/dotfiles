@@ -21,6 +21,14 @@ Configuration for various things
 * disable sound effects (settings -> sound -> sound effects -> mute)
 
 
+## grub customizer
+
+Dual-booting? Install grub customizer:
+
+    sudo add-apt-repository -y ppa:danielrichter2007/grub-customizer
+    sudo apt-get update
+    sudo apt-get install grub-customizer
+
 
 ## dotfiles
 
