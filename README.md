@@ -13,7 +13,7 @@ Configuration for various things
 * install Chrome
 * install packages
 
-        sudo apt-get install git emacs24 nvidia-current zsh pylint python-pip python3-pip synaptic nautilus-open-terminal
+        sudo apt-get install git emacs24 nvidia-current zsh pylint python-pip python3-pip synaptic nautilus-open-terminal imagemagick
 
 * fix privacy hole (https://fixubuntu.com/)
 * add more workspaces (through Unity Tweak Tool, installed in above step)
