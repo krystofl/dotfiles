@@ -13,7 +13,7 @@ Configuration for various things
 * install Chrome
 * install packages
 
-        sudo apt-get install git emacs24 nvidia-current zsh pylint python-pip python3-pip synaptic nautilus-open-terminal imagemagick
+        sudo apt-get install git emacs24 nvidia-current zsh pylint python-pip python3-pip synaptic gnome-terminal imagemagick
 
 * fix privacy hole (https://fixubuntu.com/)
 * add more workspaces (through Unity Tweak Tool, installed in above step)
@@ -32,10 +32,7 @@ Dual-booting? Install grub customizer:
 
 ## dotfiles
 
-Set up the stuff from this repo.
-
-    cp .bashrc .emacs .gdbinit .pylintrc .zshrc ~
-
+Clone this repo.
 
 ### Set up zsh as the default shell
 
@@ -51,6 +48,13 @@ Copy over config files from this repo:
 Change the default shell to zsh:
 
     chsh -s $(which zsh)
+
+
+### Set up the other config files from this repo
+
+    cp .bashrc .emacs .gdbinit .pylintrc ~
+
+
 
 
 ### emacs
