@@ -13,12 +13,18 @@ Configuration for various things
 * install Chrome
 * install packages
 
-        sudo apt-get install git emacs24 zsh pylint python-pip python3-pip synaptic gnome-terminal imagemagick
+	sudo apt-get install git emacs24 zsh pylint python-pip python3-pip synaptic gnome-terminal imagemagick
 
 * fix privacy hole (https://fixubuntu.com/)
 * add more workspaces (through Unity Tweak Tool, installed in above step)
 * change terminal background, enable unlimited scrolling
 * disable sound effects (settings -> sound -> sound effects -> mute)
+* Remove the new gnome software center and install the old one
+  (gnome fails to install external packages)
+
+	 sudo apt purge gnome-software
+	 sudo apt install software-center
+
 
 ## Nvidia drivers
 
@@ -79,4 +85,3 @@ Install flycheck:
     git config --global push.default matching
 
 Make an ssh key & add it to github: https://help.github.com/articles/generating-ssh-keys/
-
