@@ -13,12 +13,19 @@ Configuration for various things
 * install Chrome
 * install packages
 
-        sudo apt-get install git emacs24 nvidia-current zsh pylint python-pip python3-pip synaptic gnome-terminal imagemagick
+        sudo apt-get install git emacs24 zsh pylint python-pip python3-pip synaptic gnome-terminal imagemagick
 
 * fix privacy hole (https://fixubuntu.com/)
 * add more workspaces (through Unity Tweak Tool, installed in above step)
 * change terminal background, enable unlimited scrolling
 * disable sound effects (settings -> sound -> sound effects -> mute)
+
+## Nvidia drivers
+
+The results with Nvidia drivers are sometimes unpredictable.
+If you feel a need to install them, one way to do it is
+
+    sudo apt-get install nvidia-current
 
 
 ## grub customizer
