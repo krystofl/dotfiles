@@ -56,7 +56,7 @@ Get Oh-My-Zsh:
 Copy over config files from this repo:
 
     cp .zshrc ~
-    cp krystof.zsh-theme ~/.oh-my-zsh/themes
+    cp krystof-simple.zsh-theme krystof-bira.zsh-theme ~/.oh-my-zsh/themes
 
 Change the default shell to zsh:
 
