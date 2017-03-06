@@ -62,7 +62,7 @@
   ;; add my personal style and set it for the current buffer
   (c-add-style "PERSONAL" my-c-style t)
   ;; other customizations
-  (setq tab-width 8
+  (setq tab-width 4
         ;; this will make sure spaces are used instead of tabs
         indent-tabs-mode nil)
   ;; use subword motion
