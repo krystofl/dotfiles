@@ -5,6 +5,14 @@
 (setq truncate-partial-width-windows t)
 (global-set-key [M-return] 'dabbrev-expand)
 
+
+;; set default python indentation to two spaces
+(add-hook 'python-mode-hook
+      (lambda ()
+        (setq indent-tabs-mode nil)
+        (setq python-indent 2)))
+
+
 (autoload 'matlab-mode "matlab" "Matlab Editing Mode" t)
 (add-to-list 'auto-mode-alist '("\\.m$" . matlab-mode))
 (setq matlab-indent-function t)
