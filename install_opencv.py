@@ -20,12 +20,28 @@ def call(command):
   subprocess.call(command.split())
 
 
+def chdir(dirpath):
+  # try to cd into the directory dirpath
+  # if it can't be done, print the exception and exit
+  try:
+    os.chdir(dirpath)
+  except:
+    print("ERROR: Couldn't chdir into {}. Exiting.".
+          format(dirpath))
+    print(traceback.format_exc())
+    sys.exit()
+
+
 
 def install_opencv(args):
   # install opencv!
 
+  print("NOTE: this script assumes you have already installed all of the " \
+        "prerequisities; if you have not done so, rerun this script " \
+        "with the -p flag to see how to do it.\n")
+
   # print all of the selected installation options
-  print("Selected installation options: ")
+  print("\nSelected installation options: ")
   for arg, val in vars(args).items():
     print("{}: {}".format(arg, val))
   print("\n")
@@ -41,54 +57,79 @@ def install_opencv(args):
       print("Exiting (exception)")
       print(traceback.format_exc())
       return
-      
 
-  # prep directories...
 
-    
-  download_source(args)
+  # directories we'll use
+  dirs = {}
+  dirs['root'  ] = os.path.realpath(args.build_dir)
+  dirs['opencv'] = os.path.join(dirs['root'], 'opencv')
+  dirs['build' ] = os.path.join(dirs['opencv'], 'build')
 
-  configure_build(args)
 
-  build_and_install(args)
+  # download the source code
+  download_source(args, dirs)
 
-  
-  
-def download_source(args):
-  # Download the source code to build
+
+  # create the build directory
+  try:
+    os.makedirs(dirs['build'])
+  except FileExistsError:
+    # the build directory already exists for some reason; that's fine
+    pass
+  except:
+    print(traceback.format_exc())
+    return
+
+
+  #configure_build(args)
+
+  #build_and_install(args)
+
+
+
+def download_source(args, dirs):
+  # Download the source code we'll build
   print("Downloading source...")
+
+  chdir(dirs['root'])
 
   # main repo
   # git clone https://github.com/Itseez/opencv.git
   call("git clone https://github.com/Itseez/opencv.git")
-  
 
-  print("TODO: change directories")
-  
+  chdir(dirs['opencv'])
+
   # git checkout tags/3.2.0
   #git checkout tags/{}".format(args.tag)
   call("git checkout tags/{}".format(args.tag))
 
-  
+
   # contributions module
-  #git clone https://github.com/Itseez/opencv_contrib.git
-  
-  print("TODO")
+  if args.contrib:
+    print("WARNING: INSTALLING opencv_contrib IS NOT YET IMPLEMENTED\n")
+    #git clone https://github.com/Itseez/opencv_contrib.git
 
 
-  
+  chdir(dirs['root'])
+
+
+
 def configure_build(args):
   print("TODO")
 
 
-  
+
 def build_and_install(args):
   print("TODO")
-  
+
 
 
 def print_prereqs():
   # just prints a list of commands to run to get all the prerequisites for this script
+
+  print("Before running this script, run the following to install all of the " \
+        "prerequisites:\n")
+
   s1 = "sudo apt-get update"
   s2 = "sudo apt-get upgrade"
   print("{}\n{}\n".format(s1, s2))
@@ -103,8 +144,8 @@ def print_prereqs():
 
   print("sudo pip install numpy")
 
-  
-    
+
+
 def parse_command_line_args():
   # parse command line arguments
 
@@ -117,8 +158,16 @@ def parse_command_line_args():
   parser.add_argument('-f', '--force', action = 'store_true',
                       help = "'Force': don't ask user for confirmation to do anything")
 
-  # TODO: add dir to clone into
-  
+  parser.add_argument('-d', '--build-dir',
+                      default = os.getcwd(),
+                      help = "Directory where to build opencv. By default, creates an opencv directory in the present working directory")
+
+  parser.add_argument('-p', '--prereqs', action = 'store_true',
+                      help = "Show the prerequisities for this script and exit")
+
+  parser.add_argument('-c', '--contrib', action = 'store_true',
+                      help = "Also install the opencv contributions modules (see github.com/opencv/opencv_contrib)")
+
   args = parser.parse_args()
 
   return args
@@ -128,8 +177,9 @@ def parse_command_line_args():
 if __name__ == '__main__':
   args = parse_command_line_args()
 
-  print("TODO: decide whether to just show prereqs")
-  
+  # does the user just want to see the prerequisites?
+  if args.prereqs is True:
+    print_prereqs()
+    sys.exit()
+
   install_opencv(args)
-  #print_prereqs()
-  
