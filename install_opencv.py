@@ -11,7 +11,17 @@ import sys
 import argparse
 import traceback
 import subprocess
+import json
 
+
+# if the user doesn't provide build options, use these default values
+DEFAULT_BUILD_OPTIONS = { "CMAKE_BUILD_TYPE"       : "RELEASE",
+                          "CMAKE_INSTALL_PREFIX"   : "/usr/local",
+                          "INSTALL_C_EXAMPLES"     : "OFF",
+                          "INSTALL_PYTHON_EXAMPLES": "OFF",
+                          "BUILD_OPENCV_PYTHON2"   : "ON",
+                          "PYTHON2_INCLUDE_DIR"    : "/usr/include/python2.7",
+                          "BUILD_EXAMPLES"         : "OFF"}
 
 
 def call(command):
@@ -69,19 +79,7 @@ def install_opencv(args):
   # download the source code
   download_source(args, dirs)
 
-
-  # create the build directory
-  try:
-    os.makedirs(dirs['build'])
-  except FileExistsError:
-    # the build directory already exists for some reason; that's fine
-    pass
-  except:
-    print(traceback.format_exc())
-    return
-
-
-  #configure_build(args)
+  configure_build(args, dirs)
 
   #build_and_install(args)
 
@@ -103,19 +101,55 @@ def download_source(args, dirs):
   #git checkout tags/{}".format(args.tag)
   call("git checkout tags/{}".format(args.tag))
 
-
   # contributions module
   if args.contrib:
     print("WARNING: INSTALLING opencv_contrib IS NOT YET IMPLEMENTED\n")
     #git clone https://github.com/Itseez/opencv_contrib.git
-
+    # NOTE: later will need to define for CMAKE OPENCV_EXTRA_MODULES_PATH=opencv_contrib/modules
 
   chdir(dirs['root'])
 
 
 
-def configure_build(args):
-  print("TODO")
+def configure_build(args, dirs):
+  # configure the build
+
+  # create the build directory
+  try:
+    os.makedirs(dirs['build'])
+  except FileExistsError:
+    # the build directory already exists for some reason; that's fine
+    pass
+  except:
+    print("ERROR: Couldn't create the build directory. Exiting.")
+    print(traceback.format_exc())
+    sys.exit()
+
+  chdir(dirs['build'])
+
+  # load values for all of the cmake build options
+  build_options = {}
+  if os.path.exists(args.build_options_file):
+    # load 'em
+    with open(args.build_options_file, 'r') as fp:
+      build_options = json.load(fp)
+
+  # if we have nothing so far, use the default values
+  if len(build_options) == 0:
+    build_options = DEFAULT_BUILD_OPTIONS
+
+  print("Building OpenCV with the following options:")
+  for arg, val in build_options.items():
+    print("{}: {}".format(arg, val))
+  print("\n")
+
+  args_string = ''
+  for arg, val in build_options.items():
+    s = "-D {}={} ".format(arg, val)
+    args_string += s
+
+  cmake_call = 'cmake {} ..'.format(args_string)
+  call(cmake_call)
 
 
 
@@ -167,6 +201,9 @@ def parse_command_line_args():
 
   parser.add_argument('-c', '--contrib', action = 'store_true',
                       help = "Also install the opencv contributions modules (see github.com/opencv/opencv_contrib)")
+
+  parser.add_argument('-b', '--build-options-file', default = '',
+                      help = "JSON file from which to load the CMAKE build options.")
 
   args = parser.parse_args()
 
