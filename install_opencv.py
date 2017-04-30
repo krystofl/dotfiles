@@ -2,8 +2,12 @@
 
 '''
 Install OpenCV
+run `install_opencv.py --help` for usage
 
-Based on http://arijitgeek.me/index.php/2016/06/24/install-opencv-3-1-0-with-python-2-7-on-aws-ubuntu-ec2-instance/
+NOTE: Does only minimal error checking!
+      You may not want to use this if it's critical that everything works properly!
+
+Loosely based on http://arijitgeek.me/index.php/2016/06/24/install-opencv-3-1-0-with-python-2-7-on-aws-ubuntu-ec2-instance/
 '''
 
 import os
@@ -57,7 +61,7 @@ def install_opencv(args):
   print("\n")
 
   # proceed?
-  if False and not args.force:
+  if not args.force:
     proceed = input("Proceed with the installation? ")
     try:
       if proceed[0].lower() != 'y':
@@ -81,7 +85,9 @@ def install_opencv(args):
 
   configure_build(args, dirs)
 
-  #build_and_install(args)
+  build(args, dirs)
+
+  install(args, dirs)
 
 
 
@@ -153,8 +159,18 @@ def configure_build(args, dirs):
 
 
 
-def build_and_install(args):
-  print("TODO")
+def build(args, dirs):
+  # build the library
+  chdir(dirs['build'])
+  call('make -j 3') # uses three cores for the build
+
+
+
+def install(args, dirs):
+  # "install" the library
+  chdir(dirs['build'])
+  call('sudo make install')
+  call('sudo ldconfig')
 
 
 
@@ -200,7 +216,7 @@ def parse_command_line_args():
                       help = "Show the prerequisities for this script and exit")
 
   parser.add_argument('-c', '--contrib', action = 'store_true',
-                      help = "Also install the opencv contributions modules (see github.com/opencv/opencv_contrib)")
+                      help = "Also install the opencv contributions modules (see github.com/opencv/opencv_contrib). NOT IMPLEMENTED YET.")
 
   parser.add_argument('-b', '--build-options-file', default = '',
                       help = "JSON file from which to load the CMAKE build options.")
