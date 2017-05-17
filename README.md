@@ -84,4 +84,11 @@ Install flycheck:
     git config --global core.editor "emacs -nw"
     git config --global push.default matching
 
-Make an ssh key & add it to github: https://help.github.com/articles/generating-ssh-keys/
+Make an ssh key & add it to github:
+(details at https://help.github.com/articles/generating-ssh-keys/)
+
+    ssh-keygen -t rsa -b 4096 -C "EMAIL_ADDRESS | COMPUTER_NAME"
+    eval $(ssh-agent -s)
+    ssh-add ~/.ssh/id_rsa
+
+Then add the key on github.com
