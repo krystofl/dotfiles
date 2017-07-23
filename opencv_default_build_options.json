@@ -1,0 +1,9 @@
+{
+    "CMAKE_BUILD_TYPE": "RELEASE",
+    "CMAKE_INSTALL_PREFIX": "/usr/local",
+    "INSTALL_C_EXAMPLES": "OFF",
+    "INSTALL_PYTHON_EXAMPLES": "OFF",
+    "BUILD_OPENCV_PYTHON2": "ON",
+    "PYTHON2_INCLUDE_DIR": "/usr/include/python2.7",
+    "BUILD_EXAMPLES": "OFF"
+}
