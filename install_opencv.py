@@ -184,15 +184,8 @@ def print_prereqs():
   s2 = "sudo apt-get upgrade"
   print("{}\n{}\n".format(s1, s2))
 
-  s3 = "sudo apt-get install build-essential cmake git pkg-config libjpeg8-dev libjasper-dev libpng12-dev libgtk2.0-dev libavcodec-dev libavformat-dev libswscale-dev libv4l-dev libatlas-base-dev gfortran python2.7-dev\n"
+  s3 = "sudo apt-get install build-essential cmake git pkg-config libjpeg8-dev libjasper-dev libpng12-dev libgtk2.0-dev libavcodec-dev libavformat-dev libswscale-dev libv4l-dev libatlas-base-dev gfortran python-dev python-numpy python3-dev python3-numpy\n"
   print(s3)
-
-  s = '#Install pip\n' \
-      'wget https://bootstrap.pypa.io/get-pip.py\n' \
-      'sudo python get-pip.py\n'
-  print(s)
-
-  print("sudo pip install numpy")
 
 
 
