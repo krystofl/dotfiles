@@ -47,26 +47,9 @@ Dual-booting? Install grub customizer:
 
 Clone this repo.
 
-### Set up zsh as the default shell
+### Set up zsh as the default shell and copy config files
 
-Get Oh-My-Zsh:
-
-    sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-
-Copy over config files from this repo:
-
-    cp .zshrc ~
-    cp krystof-simple.zsh-theme krystof-bira.zsh-theme ~/.oh-my-zsh/themes
-
-Change the default shell to zsh:
-
-    chsh -s $(which zsh)
-
-
-### Set up the other config files from this repo
-
-    cp .bashrc .emacs .gdbinit .pylintrc ~
-
+    ./install.sh
 
 
 
