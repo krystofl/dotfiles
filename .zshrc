@@ -89,3 +89,6 @@ esac
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+# a 'clear' command that does not limit terminal scrollback
+alias clear='~/.clear.py'

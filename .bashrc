@@ -112,3 +112,6 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+
+# a 'clear' command that does not limit terminal scrollback
+alias clear='~/.clear.py'
