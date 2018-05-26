@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # download Oh-My-Zsh
-sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
 # put the appropriate files in this directory where they need to be
 cp ./.clear.py ./.zshrc ./.bashrc ./.emacs ./.gdbinit ~
