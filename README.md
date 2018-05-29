@@ -18,7 +18,7 @@ Configuration for various things
 * install Chrome
 * install packages
 
-        sudo apt-get install git emacs24 zsh pylint python-pip python3-pip synaptic gnome-terminal imagemagick ruby ruby-dev
+        sudo apt-get install git emacs zsh pylint python-pip python3-pip synaptic gnome-terminal imagemagick curl
 
 * fix privacy hole (https://fixubuntu.com/)
 * add more workspaces (through Unity Tweak Tool, installed in above step)
