@@ -1,46 +1,18 @@
 # dotfiles
 Configuration for various things
 
+*NOTE: this is written for Ubuntu 18.04 or higher*
 
 
 # Things to do after installing ubuntu
-
-* enable workspaces
-  (Appearance -> Behavior -> Enable workspaces)
-* change window menus to be in the window, not at the top title bar
-  (Appearance -> Behavior -> Show the menus for a window -> In the window's title bar)
-* Remove the new gnome software center and install the old one
-  (gnome fails to install external packages)
-
-        sudo apt purge gnome-software
-        sudo apt install software-center
 
 * install Chrome
 * install packages
 
         sudo apt-get install git emacs zsh pylint python-pip python3-pip synaptic gnome-terminal imagemagick curl
 
-* fix privacy hole (https://fixubuntu.com/)
-* add more workspaces (through Unity Tweak Tool, installed in above step)
 * change terminal background, enable unlimited scrolling
 * disable sound effects (settings -> sound -> sound effects -> mute)
-
-
-## Nvidia drivers
-
-The results with Nvidia drivers are sometimes unpredictable.
-If you feel a need to install them, one way to do it is
-
-    sudo apt-get install nvidia-current
-
-
-## grub customizer
-
-Dual-booting? Install grub customizer:
-
-    sudo add-apt-repository -y ppa:danielrichter2007/grub-customizer
-    sudo apt-get update
-    sudo apt-get install grub-customizer
 
 
 ## dotfiles
@@ -77,3 +49,21 @@ Make an ssh key & add it to github
 Then add the key on github.com
 
 Check the connection: `ssh -T git@github.com`
+
+
+
+## Nvidia drivers
+
+The results with Nvidia drivers are sometimes unpredictable.
+If you feel a need to install them, one way to do it is
+
+    sudo apt-get install nvidia-current
+
+
+## grub customizer
+
+Dual-booting? Install grub customizer:
+
+    sudo add-apt-repository -y ppa:danielrichter2007/grub-customizer
+    sudo apt-get update
+    sudo apt-get install grub-customizer
