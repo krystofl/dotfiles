@@ -14,10 +14,9 @@ Configuration for various things
 * change terminal background, enable unlimited scrolling
 * disable sound effects (settings -> sound -> sound effects -> mute)
 * revert to tradition Alt-Tab behavior:
-  * go to settings -> Keyboard
-  * in the Navigation section...
-    1. disable the shortcut for "Switch applications"
-    2. set the shortcut for "Switch windows" to Alt + Tab
+  * go to settings -> Keyboard. In the Navigation section...
+    * disable the shortcut for "Switch applications"
+    * set the shortcut for "Switch windows" to Alt + Tab
 
 
 ## dotfiles
