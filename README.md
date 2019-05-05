@@ -13,10 +13,29 @@ Configuration for various things
 
 * change terminal background, enable unlimited scrolling
 * disable sound effects (settings -> sound -> sound effects -> mute)
-* revert to tradition Alt-Tab behavior:
+* revert to traditional Alt-Tab behavior:
   * go to settings -> Keyboard. In the Navigation section...
     * disable the shortcut for "Switch applications"
     * set the shortcut for "Switch windows" to Alt + Tab
+
+
+## workspaces
+18.04 redid workspaces, and they now suck. The convoluted process described below seems to be the simplest way to get a grid of workspaces (as was easy under Unity).
+
+`sudo apt install gnome-tweak-tool`
+launch it (called `Tweaks`)
+Under Workspaces, select `Static Workspaces` and `Workspaces span displays`
+
+For 18.04:
+`sudo apt install chrome-gnome-shell`
+install the Chrome Extension: https://chrome.google.com/webstore/detail/gnome-shell-integration/gphhapmejobijbbhgpjhcjognlahblep
+go to https://extensions.gnome.org/extension/484/workspace-grid/
+install the extension by clicking the toggle
+go back to `Tweaks` -> Extensions -> click the gear (settings) icon for `Workspace grid`, and configure as desired
+
+For 19.04 and higher:
+https://extensions.gnome.org/extension/1485/workspace-matrix/
+
 
 
 ## dotfiles
