@@ -67,3 +67,8 @@ Dual-booting? Install grub customizer:
     sudo add-apt-repository -y ppa:danielrichter2007/grub-customizer
     sudo apt-get update
     sudo apt-get install grub-customizer
+
+
+## Spectre
+
+Stuff specific to my HP Spectre x360 (13t-w000 CTO) is in the `spectre` subdirectory.
