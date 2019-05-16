@@ -74,6 +74,17 @@ Then add the key on github.com
 Check the connection: `ssh -T git@github.com`
 
 
+## Switch to lightdm
+
+Ubuntu now uses GDM (GNOME Display Manager) for the login display manager, and it sucks.
+You can swich to lightdm by running
+
+   sudo apt-get install lightdm
+
+and then selecting `lightdm` as the default display manager.
+Then `sudo service gdm3 stop` and `sudo service ligthdm start`, or just restart the computer.
+
+
 
 ## Nvidia drivers
 
