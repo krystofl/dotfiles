@@ -9,7 +9,7 @@ Configuration for various things
 * install Chrome
 * install packages
 
-        sudo apt-get install git emacs zsh pylint python-pip python3-pip synaptic gnome-terminal imagemagick curl
+        sudo apt-get install git emacs zsh pylint python-pip python3-pip synaptic gnome-terminal imagemagick curl exfat-utils
 
 * change terminal background, enable unlimited scrolling
 * disable sound effects (settings -> sound -> sound effects -> mute)
@@ -108,6 +108,9 @@ Dual-booting? Install grub customizer:
 If you have a beefy computer with a dedicated graphics card, DaVinci Resolve is a great option. Note that installation on Ubuntu is not quite simple - look up "Install DaVinci Resolve on Ubuntu" to get started.
 
 Otherwise, kdenlive is a good option. Also install `breeze` to enable nicer themes.
+
+    sudo apt-get install kdenlive breeze
+
 
 
 ## Spectre
