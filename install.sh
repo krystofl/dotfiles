@@ -9,3 +9,11 @@ cp krystof-bira.zsh-theme krystof-simple.zsh-theme ~/.oh-my-zsh/themes
 
 # change the default shell to zsh
 chsh -s $(which zsh)
+
+# set up git
+# (does NOT set email address - I don't want it in the repo for privacy reasons)
+# to set the email address, run
+# git config --global user.email "EMAIL_HERE"
+git config --global user.name "Krystof Litomisky"
+git config --global core.editor "emacs -nw"
+git config --global push.default matching

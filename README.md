@@ -9,7 +9,7 @@ Configuration for various things
 * install Chrome
 * install packages
 
-        sudo apt-get install git emacs zsh pylint python-pip python3-pip synaptic gnome-terminal imagemagick curl exfat-utils gthumb
+        sudo apt-get install git emacs zsh pylint python-pip python3-pip python3-gpg synaptic gnome-terminal imagemagick curl exfat-utils gthumb
 
 * change terminal background, enable unlimited scrolling
 * disable sound effects (settings -> sound -> sound effects -> mute)
@@ -17,21 +17,23 @@ Configuration for various things
   * go to settings -> Keyboard. In the Navigation section...
     * disable the shortcut for "Switch applications"
     * set the shortcut for "Switch windows" to Alt + Tab
+* [install Dropbox](https://www.dropbox.com/install-linux)
+* [install Signal](https://signal.org/download/)
 
 
 ## workspaces
 18.04 redid workspaces, and they now suck. The convoluted process described below seems to be the simplest way to get a grid of workspaces (as was easy under Unity).
 
-`sudo apt install gnome-tweak-tool`
-launch it (called `Tweaks`)
-Under Workspaces, select `Static Workspaces` and `Workspaces span displays`
+* `sudo apt install gnome-tweak-tool`
+* launch it (called `Tweaks`)
+* Under Workspaces, select `Static Workspaces` and `Workspaces span displays`
 
 For 18.04:
-`sudo apt install chrome-gnome-shell`
-install the Chrome Extension: https://chrome.google.com/webstore/detail/gnome-shell-integration/gphhapmejobijbbhgpjhcjognlahblep
-go to https://extensions.gnome.org/extension/484/workspace-grid/
-install the extension by clicking the toggle
-go back to `Tweaks` -> Extensions -> click the gear (settings) icon for `Workspace grid`, and configure as desired
+* `sudo apt install chrome-gnome-shell`
+* install the Chrome Extension: https://chrome.google.com/webstore/detail/gnome-shell-integration/gphhapmejobijbbhgpjhcjognlahblep
+* go to https://extensions.gnome.org/extension/484/workspace-grid/
+* install the extension by clicking the toggle
+* go back to `Tweaks` -> Extensions -> click the gear (settings) icon for `Workspace grid`, and configure as desired
 
 For 19.04 and higher:
 https://extensions.gnome.org/extension/1485/workspace-matrix/
@@ -57,10 +59,13 @@ Install flycheck:
 
 ### git
 
-    git config --global user.email "my@email.com"
+    git config --global user.email "EMAIL_HERE"
     git config --global user.name "Krystof Litomisky"
     git config --global core.editor "emacs -nw"
     git config --global push.default matching
+
+Note that if you ran `install.sh`, it already set the name, editor, push.default,
+so all you need to do is set the email address (first command above).
 
 Make an ssh key & add it to github
 (details at https://help.github.com/articles/generating-ssh-keys/):
