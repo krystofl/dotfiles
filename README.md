@@ -9,7 +9,7 @@ Configuration for various things
 * [install Chrome](https://www.google.com/chrome/?brand=CHBD)
 * install packages
 
-        sudo apt-get install git emacs zsh pylint python-pip python3-pip python3-gpg synaptic gnome-terminal imagemagick curl exfat-utils gthumb
+        sudo apt-get install git emacs zsh pylint python-pip python3-pip python3-gpg synaptic gnome-terminal imagemagick curl exfat-utils gthumb konversation
 
 * change terminal background, enable unlimited scrolling
 * disable sound effects (settings -> sound -> sound effects -> mute)
