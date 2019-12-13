@@ -9,7 +9,7 @@ Configuration for various things
 * [install Chrome](https://www.google.com/chrome/?brand=CHBD)
 * install packages
 
-        sudo apt-get install git emacs zsh pylint python-pip python3-pip python3-gpg synaptic gnome-terminal imagemagick curl exfat-utils gthumb konversation unrar fbreader gimp
+        sudo apt-get install git emacs zsh pylint python-pip python3-pip python3-gpg synaptic gnome-terminal imagemagick curl exfat-utils gthumb konversation unrar fbreader gimp vlc
 
 * change terminal background, enable unlimited scrolling
 * disable sound effects (settings -> sound -> sound effects -> mute)
@@ -113,7 +113,7 @@ Dual-booting? Install grub customizer:
 
 ## Video editing
 
-If you have a beefy computer with a dedicated graphics card, DaVinci Resolve is a great option. Note that installation on Ubuntu is not quite simple - look up "Install DaVinci Resolve on Ubuntu" to get started.
+If you have a beefy computer with a dedicated graphics card, DaVinci Resolve is a great option. Note that installation on Ubuntu is not quite simple - look up "Install DaVinci Resolve on Ubuntu" to get started; [MakeResolveDeb](https://www.danieltufvesson.com/makeresolvedeb) seems like a good option to try.
 
 Otherwise, kdenlive is a good option. Also install `breeze` to enable nicer themes.
 
