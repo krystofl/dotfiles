@@ -9,7 +9,7 @@ Configuration for various things
 * [install Chrome](https://www.google.com/chrome/?brand=CHBD)
 * install packages
 
-        sudo apt-get install git emacs zsh pylint python-pip python3-pip python3-gpg synaptic gnome-terminal imagemagick curl exfat-utils gthumb konversation unrar fbreader gimp vlc
+	sudo apt-get install git emacs zsh pylint python-pip python3-pip python3-gpg synaptic gnome-terminal imagemagick curl exfat-utils gthumb konversation unrar fbreader gimp vlc
 
 * change terminal background, enable unlimited scrolling
 * disable sound effects (settings -> sound -> sound effects -> mute)
@@ -20,6 +20,7 @@ Configuration for various things
 * [install Dropbox](https://www.dropbox.com/install-linux)
 * [install Signal](https://signal.org/download/)
 * [install Nord VPN](https://nordvpn.com/download/linux/)
+* [install VeraCrypt](https://www.veracrypt.fr/en/Downloads.html)
 
 
 ## workspaces
@@ -119,3 +120,10 @@ Otherwise, kdenlive is a good option. Also install `breeze` to enable nicer them
 
     sudo apt-get install kdenlive breeze
 
+
+## Autokey
+
+AutoKey is a desktop automation utility for Linux and X11.
+
+For instructions and scripts (setup for Jeepney),
+see the `jeepney/autokey` folder.
