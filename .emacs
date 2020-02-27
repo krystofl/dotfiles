@@ -158,6 +158,7 @@
   ;; Your init file should contain only one such instance.
   ;; If there is more than one, they won't work right.
  '(cua-mode t nil (cua-base))
+  '(package-selected-packages (quote (dockerfile-mode flycheck)))
  '(tool-bar-mode nil))
 (custom-set-faces
   ;; custom-set-faces was added by Custom.
