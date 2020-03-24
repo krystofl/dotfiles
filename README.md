@@ -4,12 +4,15 @@ Configuration for various things
 *NOTE: this is written for Ubuntu 18.04 or higher*
 
 
-# Things to do after installing ubuntu
+# Install packages and dotfiles
 
-* [install Chrome](https://www.google.com/chrome/?brand=CHBD)
-* install packages
+    sudo apt install git
+    git clone git@github.com:krystofl/dotfiles.git && cd dotfiles
+    ./install.sh
 
-	sudo apt-get install git emacs zsh pylint python-pip python3-pip python3-gpg synaptic gnome-terminal imagemagick curl exfat-utils gthumb konversation unrar fbreader gimp vlc
+
+
+# Other things to do after installing ubuntu
 
 * change terminal background, enable unlimited scrolling
 * disable sound effects (settings -> sound -> sound effects -> mute)
@@ -42,15 +45,7 @@ https://extensions.gnome.org/extension/1485/workspace-matrix/
 
 
 
-## dotfiles
-
-Clone this repo.
-
-### Set up zsh as the default shell, copy config files, set some github settings
-
-    ./install.sh
-
-
+## config
 
 ### emacs
 
