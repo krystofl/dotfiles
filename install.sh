@@ -7,6 +7,11 @@ sudo apt install git emacs zsh pylint python-pip python3-pip python3-gpg synapti
 
 
 
+################# install dotfiles #########################
+cp ./.clear.py ./.zshrc ./.bashrc ./.emacs ./.gdbinit ~
+
+
+
 ########################### git ############################
 # set up git
 # (does NOT set email address - I don't want it in the repo for privacy reasons)
@@ -24,14 +29,16 @@ sudo add-apt-repository "deb [arch=amd64] https://packages.microsoft.com/repos/v
 sudo apt update
 sudo apt install code
 
+# install settings
+cp ./.config/Code/User/settings.json ~/.config/Code/User/settings.json
+
 
 
 ########################### zsh ############################
 # download Oh-My-Zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
-# put the appropriate files in this directory where they need to be
-cp ./.clear.py ./.zshrc ./.bashrc ./.emacs ./.gdbinit ~
+# zsh theme
 cp krystof-bira.zsh-theme krystof-simple.zsh-theme ~/.oh-my-zsh/themes
 
 # change the default shell to zsh
