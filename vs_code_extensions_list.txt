@@ -1,1 +1,4 @@
 jit-y.vscode-advanced-open-file
+jit-y.vscode-advanced-open-file
+ms-azuretools.vscode-docker
+ms-python.python
