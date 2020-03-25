@@ -4,11 +4,12 @@ To install Visual Studio Code and my settings, keybindings,
 and extensions, run `./install.sh`
 
 
+
 ## Keybindings
 
 These are some Keybindings I used frequently.
 
-*Standard keybindings:*
+**Standard keybindings:**
 
 Quick Open: Ctrl + P
 
@@ -32,7 +33,8 @@ Cut line: Ctrl + X
 autoindent document: Ctrl + Shift + I
 
 
-*Custom keybindings:*
+**Custom keybindings:**
+
 Make current window bigger: Alt + ]
 Make current window smaller: Alt + [
 
