@@ -43,7 +43,8 @@ cp ./.config/Code/User/*.json ~/.config/Code/User/
 
 # install extensions
 # from https://superuser.com/a/1452176/
-# to generate vs_code_extensions_list.txt, run `code --list-extensions >> vs_code_extensions_list.txt`
+# to generate vs_code_extensions_list.txt, run
+# `rm vs_code_extensions_list.txt && code --list-extensions >> vs_code_extensions_list.txt`
 cat vs_code_extensions_list.txt | xargs -n 1 code --install-extension
 
 

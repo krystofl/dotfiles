@@ -7,5 +7,15 @@
     {
         "key": "alt+[",
         "command": "workbench.action.decreaseViewSize"
+    },
+    {
+        "key": "ctrl+x",
+        "command": "editor.action.clipboardCutAction",
+        "when": "!editorReadonly"
+    },
+    {
+        "key": "ctrl+x",
+        "command": "-editor.action.clipboardCutAction",
+        "when": "textInputFocus && !editorReadonly"
     }
 ]

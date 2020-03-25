@@ -1,4 +1,4 @@
 jit-y.vscode-advanced-open-file
-jit-y.vscode-advanced-open-file
+kaiwood.center-editor-window
 ms-azuretools.vscode-docker
 ms-python.python
