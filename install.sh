@@ -12,7 +12,7 @@ sudo apt install git emacs zsh pylint python-pip python3-pip python3-gpg synapti
 
 ################# install dotfiles #########################
 echo "\n\nInstalling dotfiles..."
-cp ./.clear.py ./.zshrc ./.bashrc ./.emacs ./.gdbinit ~
+cp ./.clear.py ./.zshrc ./.bashrc ./.emacs ./.gdbinit ./.pylintrc ~
 
 
 
