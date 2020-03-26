@@ -14,3 +14,9 @@ sudo apt-get install atom
 
 # install my settings and keybindings
 cp ./*.cson ~/.atom/
+
+
+# install my extensions
+# to generate atom_packages.list, run
+# apm list --installed --bare > atom_packages.list
+apm install --packages-file atom_packages.list

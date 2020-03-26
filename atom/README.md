@@ -1,15 +1,11 @@
 # Atom
 
-To install Atom, run `./install_atom.sh`
+To install Atom, including my settings, keybindings, and packages, run `./install_atom.sh`
 
 Docs are in the [flight manual](https://flight-manual.atom.io/getting-started/)
 
 # TODO
-- save extensions
-
-Installed extensions:
-- Advanced Open File - https://atom.io/packages/advanced-open-file
-- TODO: Layout Manager - https://atom.io/packages/layout-manager
+TODO: Layout Manager - https://atom.io/packages/layout-manager
 
 
 # Keybindings
