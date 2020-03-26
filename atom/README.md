@@ -4,14 +4,12 @@ To install Atom, including my settings, keybindings, and packages, run `./instal
 
 Docs are in the [flight manual](https://flight-manual.atom.io/getting-started/)
 
-# TODO
-TODO: Layout Manager - https://atom.io/packages/layout-manager
-
 
 # Keybindings
 
 - Ctrl+Shift+P - Command Palette
 - Keybinding resolver: Ctrl+.
+- settings: Ctrl+,
 
 Working with files:
 - Ctrl+Alt+O - advanced open file
@@ -36,6 +34,7 @@ Panes:
 - Duplicate line: Ctrl+Shift+D
 - Delete line: Ctrl+Shift+K
 - Align multi-line selection - Ctrl+Alt+A (from atom-alignment)
+- center editor window on cursor: Ctrl+L (from simple-center-screen)
 
 Multiple cursors:
 - Alt+Shift+Up/Down - Add another cursor above/below the current cursor
@@ -60,11 +59,18 @@ Prose:
 - Ctrl+Shift+M - show Markdown preview
 
 
+# Extensions
+Extensions are automatically installed by `install_atom.sh`.
+
+To update the list of installed extensions, run
+
+    apm list --installed --bare > atom_packages.list
+
+
 # TODO: Learn & Figure Out...
 Navigating by symbols in entire projects using ctags: https://flight-manual.atom.io/using-atom/sections/moving-in-atom/#navigating-by-symbols
 
 Snippets: https://flight-manual.atom.io/using-atom/sections/snippets/
 
-How to center file on cursor?
-
-How to resize current pane with the keyboard?
+Get commands to resize pane width and height independently via the keyboard:
+https://github.com/atom/atom/issues/20558

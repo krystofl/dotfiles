@@ -7,3 +7,4 @@
   'alt-left'       : 'window:focus-pane-on-left'
   'alt-up'         : 'window:focus-pane-above'
   'alt-down'       : 'window:focus-pane-below'
+  'ctrl-l'         : 'simple-center-screen:toggle'
