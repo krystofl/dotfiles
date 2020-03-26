@@ -2,9 +2,34 @@
   "autocomplete-plus":
     confirmCompletion: "tab always, enter when suggestion explicitly selected"
   core:
+    autoHideMenuBar: true
+    packagesWithKeymapsDisabled: [
+      "terminal-tab"
+    ]
+    projectHome: "/home/krystof/code"
     telemetryConsent: "no"
   editor:
     scrollSensitivity: 60
     showLineNumbers: false
   "exception-reporting":
     userId: "59b128a1-3475-4b7d-9f80-1840c9a9d144"
+  "linter-pylint":
+    rcFile: "~/.pylintrc"
+  "linter-ui-default":
+    showPanel: true
+  "terminal-plus":
+    core: {}
+    toggles:
+      runInsertedText: false
+  "terminal-tab":
+    defaultLocation: "right"
+  welcome:
+    showOnStartup: false
+".python.regexp.source":
+  editor:
+    tabLength: 2
+".python.source":
+  editor:
+    autoIndentOnPaste: true
+    tabLength: 2
+    tabType: "soft"

@@ -25,6 +25,8 @@ Panes:
 - Close all items in a pane: Ctrl+K Ctrl+W
 - Select a tab in the current editor window: Alt+<number>
 - switching between panes: Alt+Up/Down/Left/Right
+- grow pane: alt-cmd-=
+- shrink pane: alt-cmd--
 
 
 ## Editing
@@ -74,3 +76,9 @@ Snippets: https://flight-manual.atom.io/using-atom/sections/snippets/
 
 Get commands to resize pane width and height independently via the keyboard:
 https://github.com/atom/atom/issues/20558
+
+Get a plugin to open a terminal
+(atom-terminal-tab looks good except that you can't navigate from the terminal
+pane using the keyboard. See https://github.com/jsmecham/atom-terminal-tab/issues/56)
+
+Add keybinding for Find And Replace: Replace Next
