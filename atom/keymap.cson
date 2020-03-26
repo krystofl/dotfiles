@@ -1,0 +1,9 @@
+'atom-text-editor':
+  'ctrl-up'        : 'editor:move-to-beginning-of-previous-paragraph'
+  'ctrl-down'      : 'editor:move-to-beginning-of-next-paragraph'
+  'ctrl-shift-up'  : 'editor:select-to-beginning-of-previous-paragraph'
+  'ctrl-shift-down': 'editor:select-to-beginning-of-next-paragraph'
+  'alt-right'      : 'window:focus-pane-on-right'
+  'alt-left'       : 'window:focus-pane-on-left'
+  'alt-up'         : 'window:focus-pane-above'
+  'alt-down'       : 'window:focus-pane-below'
