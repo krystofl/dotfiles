@@ -32,11 +32,13 @@ Panes:
 ## Editing
 - Ctrl+G - go to row:col
 - Navigate by symbol: Ctrl+R
+- Go to function definition (python): Ctrl - Alt - G
 - Select line: Ctrl+L
 - Duplicate line: Ctrl+Shift+D
 - Delete line: Ctrl+Shift+K
 - Align multi-line selection - Ctrl+Alt+A (from atom-alignment)
 - center editor window on cursor: Ctrl+L (from simple-center-screen)
+-
 
 Multiple cursors:
 - Alt+Shift+Up/Down - Add another cursor above/below the current cursor
