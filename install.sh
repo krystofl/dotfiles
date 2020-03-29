@@ -9,6 +9,10 @@ sudo apt update
 sudo apt install git emacs zsh pylint python-pip python3-pip python3-gpg synaptic gnome-terminal imagemagick curl exfat-utils gthumb konversation unrar fbreader gimp vlc software-properties-common apt-transport-https wget
 
 
+# show the date in the top panel
+gsettings set org.gnome.desktop.interface clock-show-date true
+
+
 
 ################# install dotfiles #########################
 echo "\n\nInstalling dotfiles..."
