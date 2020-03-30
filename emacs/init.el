@@ -6,6 +6,11 @@
 (global-set-key [M-return] 'dabbrev-expand)
 
 
+;; Cask for package management
+(require 'cask "~/.cask/cask.el")
+(cask-initialize)
+
+
 ;; set default python indentation to two spaces
 (add-hook 'python-mode-hook
       (lambda ()

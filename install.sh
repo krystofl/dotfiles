@@ -6,9 +6,16 @@
 ###################### install packages ####################
 echo "\n\nInstalling packages..."
 sudo apt update
-sudo apt install git emacs zsh pylint python-pip python3-pip python3-gpg synaptic gnome-terminal imagemagick curl exfat-utils gthumb konversation unrar fbreader gimp vlc software-properties-common apt-transport-https wget
+sudo apt install git zsh pylint python-pip python3-pip python3-gpg synaptic gnome-terminal imagemagick curl exfat-utils gthumb konversation unrar fbreader gimp vlc software-properties-common apt-transport-https wget
+
+# install emacs and its customizations
+pushd emacs
+./install_emacs.sh
+popd # back here
 
 
+
+################### set ubuntu settings ####################
 # show the date in the top panel
 gsettings set org.gnome.desktop.interface clock-show-date true
 
@@ -16,7 +23,7 @@ gsettings set org.gnome.desktop.interface clock-show-date true
 
 ################# install dotfiles #########################
 echo "\n\nInstalling dotfiles..."
-cp ./.clear.py ./.zshrc ./.bashrc ./.emacs ./.gdbinit ./.pylintrc ~
+cp ./.clear.py ./.zshrc ./.bashrc ./.gdbinit ./.pylintrc ~
 
 
 
