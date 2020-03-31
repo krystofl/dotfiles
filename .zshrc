@@ -54,7 +54,7 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/home/krystof/.rvm/bin:/home/krystof/.rvm/bin"
+export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/home/krystof/.rvm/bin:/home/krystof/.rvm/bin:/snap/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # set terminal titles to just the last directory of pwd
