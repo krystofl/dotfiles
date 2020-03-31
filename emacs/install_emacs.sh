@@ -12,7 +12,7 @@ sudo apt install emacs26
 
 
 ############################ install my config #################################
-cp ./init.el ~/.emacs.d/
+cp ./init.el Cask ~/.emacs.d/
 
 
 
