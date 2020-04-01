@@ -6,7 +6,10 @@
 ###################### install packages ####################
 echo "\n\nInstalling packages..."
 sudo apt update
-sudo apt install git zsh pylint python-pip python3-pip python3-gpg synaptic gnome-terminal imagemagick curl exfat-utils gthumb konversation unrar fbreader gimp vlc software-properties-common apt-transport-https wget
+sudo apt install git zsh pylint python3-pip python3-gpg synaptic \
+                 gnome-terminal imagemagick curl exfat-utils gthumb \
+                 konversation unrar fbreader gimp vlc \
+                 software-properties-common apt-transport-https wget tmux
 
 # install emacs and its customizations
 pushd emacs
