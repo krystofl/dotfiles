@@ -12,10 +12,16 @@ sudo apt install git zsh pylint python3-pip python3-gpg synaptic \
                  software-properties-common apt-transport-https wget tmux
 
 # install emacs and its customizations
+echo "\n\nInstalling emacs..."
 pushd emacs
 ./install_emacs.sh
 popd # back here
 
+# install atom and its customizations
+echo "\n\nInstalling Atom..."
+pushd atom
+./install_atom.sh
+popd # back here
 
 
 ################### set ubuntu settings ####################
