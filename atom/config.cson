@@ -15,9 +15,21 @@
   "exception-reporting":
     userId: "59b128a1-3475-4b7d-9f80-1840c9a9d144"
   "linter-pylint":
+    disableTimeout: true
     rcFile: "~/.pylintrc"
   "linter-ui-default":
     panelHeight: 170
+  "spell-check":
+    addKnownWords: true
+    knownWords: [
+      "Ecogate"
+      "Analytics"
+      "greenBOXes"
+      "json"
+      "config"
+      "ecogate"
+      "Dockerfile"
+    ]
   "terminal-plus":
     core: {}
     toggles:
