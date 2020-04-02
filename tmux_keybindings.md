@@ -1,5 +1,8 @@
 # tmux keybindings
 
+- C-b [ - scrolling mode (using arrows or Page Up/Down)
+
+
 ## Panes
 - C-b % - split vertically **(change to not require holding shift?)**
 - C-b " - split horizontally (change?)
