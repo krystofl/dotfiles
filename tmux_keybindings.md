@@ -26,8 +26,14 @@ Windows in tmux work similarly to tabs in the terminal
 
 ## Sessions
 - C-b d - detach current session, leaving processes running in the background
+- C-b C-z - suspend session (change this? It's too similar to zen mode)
 - `tmux ls` - list sessions
 - `tmux attach -t SOMENAME` - attach to session SOMENAME
    (from `tmux ls` output; default names are ints)
 - `tmux new -s HACKING` - create a new session named HACKING
 - `tmux rename-session -t 0 HACKING` - rename session 0 to HACKING
+
+
+## TODO
+- be able to restore sessions (incl. running commands) between
+  system restarts. https://github.com/tmux-plugins/tmux-resurrect might help
