@@ -9,7 +9,8 @@
     projectHome: "/home/krystof/code"
     telemetryConsent: "no"
   editor:
-    scrollSensitivity: 60
+    scrollSensitivity: 100
+    showIndentGuide: true
     showLineNumbers: false
     tabType: "soft"
   "exception-reporting":
@@ -19,6 +20,8 @@
     rcFile: "~/.pylintrc"
   "linter-ui-default":
     panelHeight: 170
+  "markdown-preview":
+    useGitHubStyle: true
   "spell-check":
     addKnownWords: true
     knownWords: [
@@ -29,6 +32,18 @@
       "config"
       "ecogate"
       "Dockerfile"
+      "fullscreen"
+      "emacs"
+      "Krystof"
+      "Kubernetes"
+      "kubectl"
+      "yaml"
+      "https"
+      "TODO"
+      "cron"
+      "repo"
+      "Transformational"
+      "analytics"
     ]
   "terminal-plus":
     core: {}

@@ -25,8 +25,8 @@ Panes:
 - Close all items in a pane: Ctrl+K Ctrl+W
 - Select a tab in the current editor window: Alt+<number>
 - switching between panes: Alt+Up/Down/Left/Right
-- grow pane: alt-cmd-=
-- shrink pane: alt-cmd--
+- grow pane  : ctrl-alt-=
+- shrink pane: ctrl-alt--
 
 
 ## Editing
@@ -78,9 +78,24 @@ Snippets: https://flight-manual.atom.io/using-atom/sections/snippets/
 
 Get commands to resize pane width and height independently via the keyboard:
 https://github.com/atom/atom/issues/20558
+Take a look at
+[this pull request](https://github.com/atom/atom/pull/7354)
+where the keyboard commands to grow/shrink panes were added.
+At a glance, writing a plugin to do that should not be too hard.
 
 Get a plugin to open a terminal
 (atom-terminal-tab looks good except that you can't navigate from the terminal
 pane using the keyboard. See https://github.com/jsmecham/atom-terminal-tab/issues/56)
 
 Add keybinding for Find And Replace: Replace Next
+
+Python type checking (looks like mypy is the way to go)
+
+Make autocompletion less annoying:
+- Disable python suggestions when I haven't typed anything yet
+  (e.g. when I create an open parens after a function call)
+- introduce a delay before showing the popup?
+
+Install dockerlint (system package + atom plugin).
+See https://atom.io/packages/linter-docker and
+[Dockerfile best practices](https://docs.docker.com/develop/develop-images/dockerfile_best-practices/)
