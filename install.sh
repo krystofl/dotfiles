@@ -9,7 +9,8 @@ sudo apt update
 sudo apt install git zsh pylint python3-pip python3-gpg synaptic \
                  gnome-terminal imagemagick curl exfat-utils gthumb \
                  konversation unrar fbreader gimp vlc \
-                 software-properties-common apt-transport-https wget tmux
+                 software-properties-common apt-transport-https wget tmux \
+                 gnome-tweak-tool chrome-gnome-shell
 
 # install emacs and its customizations
 echo "\n\nInstalling emacs..."
