@@ -30,12 +30,6 @@ gsettings set org.gnome.desktop.interface clock-show-date true
 
 
 
-################# install dotfiles #########################
-echo "\n\nInstalling dotfiles..."
-cp ./.clear.py ./.zshrc ./.bashrc ./.gdbinit ./.pylintrc ~
-
-
-
 ########################### git ############################
 echo "\n\nSetting git config..."
 
@@ -60,3 +54,9 @@ cp krystof-bira.zsh-theme krystof-simple.zsh-theme ~/.oh-my-zsh/themes
 
 # change the default shell to zsh
 chsh -s $(which zsh)
+
+
+
+################# install dotfiles #########################
+echo "\n\nInstalling dotfiles..."
+cp ./.clear.py ./.zshrc ./.bashrc ./.gdbinit ./.pylintrc ~
