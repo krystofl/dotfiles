@@ -1,6 +1,8 @@
 "*":
   "autocomplete-plus":
     confirmCompletion: "tab always, enter when suggestion explicitly selected"
+  "autocomplete-python-jedi":
+    triggerCompletionRegex: "([.(]|[a-zA-Z_][a-zA-Z0-9_]*)"
   core:
     autoHideMenuBar: true
     packagesWithKeymapsDisabled: [
@@ -9,12 +11,16 @@
     projectHome: "/home/krystof/code"
     telemetryConsent: "no"
   editor:
+    autoIndentOnPaste: false
     scrollSensitivity: 100
     showIndentGuide: true
     showLineNumbers: false
     tabType: "soft"
   "exception-reporting":
     userId: "59b128a1-3475-4b7d-9f80-1840c9a9d144"
+  "linter-eslint":
+    disabling:
+      disableWhenNoEslintConfig: false
   "linter-pylint":
     disableTimeout: true
     rcFile: "~/.pylintrc"
@@ -44,6 +50,7 @@
       "repo"
       "Transformational"
       "analytics"
+      "executables"
     ]
   "terminal-plus":
     core: {}

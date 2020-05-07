@@ -99,3 +99,8 @@ Make autocompletion less annoying:
 Install dockerlint (system package + atom plugin).
 See https://atom.io/packages/linter-docker and
 [Dockerfile best practices](https://docs.docker.com/develop/develop-images/dockerfile_best-practices/)
+
+Get a way to open files using wildcard characters, e.g. *.yaml.
+Probably extendeding
+[Advanced Open File](https://atom.io/packages/advanced-open-file),
+or finding an alternative, is the way to go.
