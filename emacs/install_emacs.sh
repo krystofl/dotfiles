@@ -12,6 +12,7 @@ sudo apt install emacs26
 
 
 ############################ install my config #################################
+mkdir -p ~/.emacs.d
 cp ./init.el Cask ~/.emacs.d/
 
 
@@ -28,4 +29,4 @@ cask install
 popd # back to here
 
 # install a markdown renderer - needed by the markdown-mode package
-sudo apt install markdown
+#sudo apt install markdown

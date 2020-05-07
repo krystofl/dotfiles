@@ -1,10 +1,26 @@
 # dotfiles
 Configuration for various things
 
-*NOTE: this is written for Ubuntu 18.04 or higher*
+*NOTE: this is targeted for Ubuntu 20.04*
 
 
 # Install packages and dotfiles
+
+Change the terminal background and enable unlimited scrolling.
+
+## Make an ssh key & add it to github
+[Detailed instructions](https://help.github.com/articles/generating-ssh-keys/):
+
+    ssh-keygen -t rsa -b 4096 -C "EMAIL_ADDRESS | COMPUTER_NAME"
+    eval $(ssh-agent -s)
+    ssh-add ~/.ssh/id_rsa
+
+Then add the key on [github](https://github.com/settings/keys)
+
+Check the connection: `ssh -T git@github.com`
+
+
+## Install packages and settings
 
     sudo apt install git
     git clone git@github.com:krystofl/dotfiles.git && cd dotfiles
@@ -14,45 +30,41 @@ Configuration for various things
 
 # Other things to do after installing ubuntu
 
-* change terminal background, enable unlimited scrolling
 * disable sound effects (settings -> sound -> sound effects -> mute)
-* revert to traditional Alt-Tab behavior:
-  * go to settings -> Keyboard. In the Navigation section...
-    * disable the shortcut for "Switch applications"
-    * set the shortcut for "Switch windows" to Alt + Tab
 * [install Dropbox](https://www.dropbox.com/install-linux)
 * [install Signal](https://signal.org/download/)
 * [install Nord VPN](https://nordvpn.com/download/linux/)
 * [install VeraCrypt](https://www.veracrypt.fr/en/Downloads.html)
 
 
-## workspaces
+## Workspaces
+
 18.04 redid workspaces, and they now suck. The convoluted process described below seems to be the simplest way to get a grid of workspaces (as was easy under Unity).
 
-* `sudo apt install gnome-tweak-tool`
-* launch it (called `Tweaks`)
-* Under Workspaces, select `Static Workspaces` and `Workspaces span displays`
+Note that this uses `gnome-tweak-tool` and `chrome-gnome-shell`,
+which get installed by `install.sh`
 
-For 18.04:
-* `sudo apt install chrome-gnome-shell`
-* install the Chrome Extension: https://chrome.google.com/webstore/detail/gnome-shell-integration/gphhapmejobijbbhgpjhcjognlahblep
-* go to https://extensions.gnome.org/extension/484/workspace-grid/
-* install the extension by clicking the toggle
-* go back to `Tweaks` -> Extensions -> click the gear (settings) icon for `Workspace grid`, and configure as desired
+* launch the `gnome-tweak-tool` aka *Tweaks*
+* Under Workspaces, select `Static Workspaces` and `Workspaces span displays`
+* Install the GNOME Shell Integration browser extension for
+  [Firefox](https://addons.mozilla.org/en-US/firefox/addon/gnome-shell-integration) or
+  [Chrome](https://chrome.google.com/webstore/detail/gnome-shell-integration/gphhapmejobijbbhgpjhcjognlahblep)
+
 
 For 19.04 and higher:
-https://extensions.gnome.org/extension/1485/workspace-matrix/
+* Go to https://extensions.gnome.org/extension/1485/workspace-matrix/ and
+  install the extension
+* configure workspaces from Tweaks -> Extensions -> Workspace Matrix (gear icon).
+  Note the number of workspaces here must match the number set in
+  Tweaks -> Workspaces
+
+For 18.04:
+* Install the GNOME extension: https://extensions.gnome.org/extension/484/workspace-grid/
+* go back to `Tweaks` -> Extensions -> click the gear (settings) icon for `Workspace grid`, and configure as desired
 
 
 
 ## config
-
-### emacs
-
-Install flycheck:
-
-    M-x package-install <RET> flycheck
-
 
 ### git
 
@@ -65,28 +77,6 @@ If you haven't (and don't want to) run `install.sh`, also run these:
     git config --global user.name "Krystof Litomisky"
     git config --global core.editor "emacs -nw"
     git config --global push.default matching
-
-Make an ssh key & add it to github
-[detailed instructions](https://help.github.com/articles/generating-ssh-keys/):
-
-    ssh-keygen -t rsa -b 4096 -C "EMAIL_ADDRESS | COMPUTER_NAME"
-    eval $(ssh-agent -s)
-    ssh-add ~/.ssh/id_rsa
-
-Then add the key on [github](https://github.com/settings/keys)
-
-Check the connection: `ssh -T git@github.com`
-
-
-## Switch to lightdm
-
-Ubuntu now uses GDM (GNOME Display Manager) for the login display manager, and it sucks.
-You can swich to lightdm by running
-
-   sudo apt-get install lightdm
-
-and then selecting `lightdm` as the default display manager.
-Then `sudo service gdm3 stop` and `sudo service ligthdm start`, or just restart the computer.
 
 
 
