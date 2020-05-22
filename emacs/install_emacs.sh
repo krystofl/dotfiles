@@ -7,7 +7,7 @@
 # (this will need to be updated on future major version releases)
 sudo add-apt-repository ppa:kelleyk/emacs
 sudo apt-get update
-sudo apt install emacs26
+sudo apt install -y emacs26
 
 
 

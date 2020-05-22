@@ -9,7 +9,7 @@ sudo sh -c 'echo "deb [arch=amd64] https://packagecloud.io/AtomEditor/atom/any/ 
 sudo apt-get update
 
 # install atom
-sudo apt-get install atom
+sudo apt-get install -y atom
 
 
 # install my extensions
