@@ -61,3 +61,5 @@ execute: x
 
 ### Miscellaneous
 highlight misspelled words: M-x flyspell-mode
+
+open a file as sudo: C-xC-f /sudo::/path/to/file
