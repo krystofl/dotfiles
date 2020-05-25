@@ -63,10 +63,7 @@ For 18.04:
 * go back to `Tweaks` -> Extensions -> click the gear (settings) icon for `Workspace grid`, and configure as desired
 
 
-
-## config
-
-### git
+## git
 
 If you already ran `install.sh`, all you need to run is:
 
@@ -79,6 +76,28 @@ If you haven't (and don't want to) run `install.sh`, also run these:
     git config --global push.default matching
 
 
+
+## Python
+
+`install.sh` installs Python's virtualenv and virtualenvwrapper libs, but there is a problem: virtualenvwrapper wants to run for the result of `which python`, but Atom forces `python` to be `python2`, while we want to use virtualenvwrapper for `python3`.
+
+To fix this, edit `/usr/local/bin/virtualenvwrapper.sh` to tell it to look for `python3`. The relevant line (line no. 50 as of this writing) should read
+
+    VIRTUALENVWRAPPER_PYTHON="$(command \which python3)"
+
+...where before it looked for just `python`.
+
+Note that the virtualenvwrapper zsh plugin will automatically activate a virtualenv that maches the name of a directory, or you can manually set the virtualenv to activate using a `.venv` file
+([docs](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/virtualenvwrapper#virtualenvwrapper-plugin)).
+
+virtualenvwrapper command reference:
+- `deactivate` - deactivate the current virtualenv
+- `mkvirtualenv ENVNAME` - make a virtualenv called ENVNAME
+- `rmvirtualenv ENVNAME` - delete the virtualenv ENVNAME
+
+
+
+# Misc
 
 ## Nvidia drivers
 

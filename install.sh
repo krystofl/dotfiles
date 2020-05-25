@@ -25,9 +25,15 @@ pushd atom
 popd # back here
 
 
+
 ################### set ubuntu settings ####################
 # show the date in the top panel
 gsettings set org.gnome.desktop.interface clock-show-date true
+
+
+
+######################## python ############################
+sudo pip3 install virtualenv virtualenvwrapper
 
 
 
