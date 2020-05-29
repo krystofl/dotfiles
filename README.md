@@ -91,6 +91,7 @@ Note that the virtualenvwrapper zsh plugin will automatically activate a virtual
 ([docs](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/virtualenvwrapper#virtualenvwrapper-plugin)).
 
 virtualenvwrapper command reference:
+- `workon` - list all virtualenvs
 - `deactivate` - deactivate the current virtualenv
 - `mkvirtualenv ENVNAME` - make a virtualenv called ENVNAME
 - `rmvirtualenv ENVNAME` - delete the virtualenv ENVNAME
