@@ -1,7 +1,16 @@
 "*":
+  "atom-alignment":
+    alignBy: [
+      "=>"
+      ":="
+      ":"
+      "="
+      ","
+    ]
   "autocomplete-plus":
     confirmCompletion: "tab always, enter when suggestion explicitly selected"
   "autocomplete-python-jedi":
+    extraPaths: "/home/krystof/.virtualenvs/$PROJECT_NAME/lib/python3.8/site-packages"
     triggerCompletionRegex: "([.(]|[a-zA-Z_][a-zA-Z0-9_]*)"
   core:
     autoHideMenuBar: true
@@ -22,7 +31,6 @@
     disabling:
       disableWhenNoEslintConfig: false
   "linter-pylint":
-    disableTimeout: true
     rcFile: "~/.pylintrc"
   "linter-ui-default":
     panelHeight: 170

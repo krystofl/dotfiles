@@ -10,6 +10,7 @@ Docs are in the [flight manual](https://flight-manual.atom.io/getting-started/)
 - Ctrl+Shift+P - Command Palette
 - Keybinding resolver: Ctrl+.
 - settings: Ctrl+,
+- change syntax highlighting mode: Ctrl-Shift-L
 
 Working with files:
 - Ctrl+Alt+O - advanced open file
