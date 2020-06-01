@@ -21,6 +21,7 @@
     telemetryConsent: "no"
   editor:
     autoIndentOnPaste: false
+    scrollPastEnd: true
     scrollSensitivity: 100
     showIndentGuide: true
     showLineNumbers: false
@@ -31,6 +32,7 @@
     disabling:
       disableWhenNoEslintConfig: false
   "linter-pylint":
+    disableTimeout: true
     rcFile: "~/.pylintrc"
   "linter-ui-default":
     panelHeight: 170
