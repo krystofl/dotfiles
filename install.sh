@@ -16,6 +16,8 @@ sudo apt install -y git zsh pylint python3-pip python3-gpg synaptic \
 
 
 ######################## docker ############################
+# from https://docs.docker.com/engine/install/ubuntu/#install-using-the-repository
+
 echo "\n\nInstalling docker..."
 # install prereqs
 sudo apt-get update
