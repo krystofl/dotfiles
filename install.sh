@@ -1,4 +1,5 @@
-#!/bin/bash
+#!/usr/bin/env bash
+
 
 # NOTE: this script assumes that it is run from its directory (i.e. as `./install.sh`)
 
@@ -12,6 +13,35 @@ sudo apt install -y git zsh pylint python3-pip python3-gpg synaptic \
                     software-properties-common apt-transport-https wget tmux \
                     gnome-tweak-tool chrome-gnome-shell mlocate tree
 
+
+
+######################## docker ############################
+echo "\n\nInstalling docker..."
+# install prereqs
+sudo apt-get update
+sudo apt-get install -y \
+    apt-transport-https \
+    ca-certificates \
+    curl \
+    gnupg-agent \
+    software-properties-common
+
+# Add Docker’s official GPG key
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+
+# Add the repository
+sudo add-apt-repository \
+   "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
+   $(lsb_release -cs) \
+   stable"
+
+# update package index and install docker
+sudo apt-get update
+sudo apt-get install -y docker-ce docker-ce-cli containerd.io
+
+
+
+###################### install editors ####################
 # install emacs and its customizations
 echo "\n\nInstalling emacs..."
 pushd emacs
@@ -33,6 +63,7 @@ gsettings set org.gnome.desktop.interface clock-show-date true
 
 
 ######################## python ############################
+echo "\n\nInstalling python packages..."
 sudo pip3 install virtualenv virtualenvwrapper
 
 
