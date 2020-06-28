@@ -118,3 +118,6 @@ alias clear='~/.clear.py'
 
 # open the current folder as a project in a new window in Atom
 alias atin='atom -n . &'
+
+# shorthand for common ls command
+alias lh='ls -lah'
