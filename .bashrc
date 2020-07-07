@@ -120,4 +120,4 @@ alias clear='~/.clear.py'
 alias atin='atom -n . &'
 
 # shorthand for common ls command
-alias lh='ls -lah'
+alias lh='ls -lh'
