@@ -64,6 +64,15 @@ Prose:
 - Ctrl+Shift+M - show Markdown preview
 
 
+
+# Snippets
+
+**Python**
+- `env3` --> `#!/usr/bin/env python3`
+- `ifmain` --> `if __name__ == '__main__':`
+
+
+
 # Extensions
 Extensions are automatically installed by `install_atom.sh`.
 
