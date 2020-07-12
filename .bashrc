@@ -121,3 +121,5 @@ alias atin='atom -n . &'
 
 # shorthand for common ls command
 alias lh='ls -lh'
+
+alias mkc='microk8s kubectl'

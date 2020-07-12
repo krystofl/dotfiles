@@ -71,6 +71,9 @@ Prose:
 - `env3` --> `#!/usr/bin/env python3`
 - `ifmain` --> `if __name__ == '__main__':`
 
+**Shell Scripts**
+- `bash` --> `#!/usr/bin/env bash`
+
 
 
 # Extensions

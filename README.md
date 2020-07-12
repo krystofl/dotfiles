@@ -100,6 +100,17 @@ virtualenvwrapper command reference:
 
 # Misc
 
+## Microk8s
+
+To install [Microk8s](https://microk8s.io/), you can run `./install_microk8s.sh`
+
+The script also enables the services `dashboard dns registry istio`
+
+You can use the alias `mkc` for `microk8s kubectl`
+
+Start and stop microk8s with `microk8s start` and `microk8s stop`
+
+
 ## Nvidia drivers
 
 The results with Nvidia drivers are sometimes unpredictable.

@@ -90,10 +90,6 @@ esac
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
-#
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # a 'clear' command that does not limit terminal scrollback
 alias clear='~/.clear.py'
@@ -103,3 +99,5 @@ alias atin='atom -n . &'
 
 # shorthand for common ls command
 alias lh='ls -lh'
+
+alias mkc='microk8s kubectl'
