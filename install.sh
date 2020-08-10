@@ -104,4 +104,4 @@ chsh -s $(which zsh)
 
 ################# install dotfiles #########################
 echo "\n\nInstalling dotfiles..."
-cp ./.clear.py ./.zshrc ./.bashrc ./.gdbinit ./.pylintrc ~
+cp ./.zshrc ./.bashrc ./.gdbinit ./.pylintrc ~

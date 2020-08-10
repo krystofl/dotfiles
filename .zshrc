@@ -91,9 +91,6 @@ esac
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
 
-# a 'clear' command that does not limit terminal scrollback
-alias clear='~/.clear.py'
-
 # open the current folder as a project in a new window in Atom
 alias atin='atom -n . &'
 

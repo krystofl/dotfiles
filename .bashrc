@@ -113,9 +113,6 @@ if ! shopt -oq posix; then
   fi
 fi
 
-# a 'clear' command that does not limit terminal scrollback
-alias clear='~/.clear.py'
-
 # open the current folder as a project in a new window in Atom
 alias atin='atom -n . &'
 
