@@ -61,6 +61,8 @@
       "Transformational"
       "analytics"
       "executables"
+      "APIs"
+      "formatter"
     ]
   "terminal-plus":
     core: {}

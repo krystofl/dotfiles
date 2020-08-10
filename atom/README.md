@@ -68,6 +68,7 @@ Prose:
 # Snippets
 
 **Python**
+- `py3exec` --> skeleton of a python3 executable
 - `env3` --> `#!/usr/bin/env python3`
 - `ifmain` --> `if __name__ == '__main__':`
 

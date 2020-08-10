@@ -4,7 +4,7 @@
 # to update the repo
 
 # settings
-cp ~/.atom/config.cson ~/.atom/keymap.cson ~/.atom/linter-config.json .
+cp ~/.atom/config.cson ~/.atom/keymap.cson ~/.atom/snippets.cson ~/.atom/linter-config.json .
 
 # package list
 apm list --installed --bare > atom_packages.list

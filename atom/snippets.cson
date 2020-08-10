@@ -1,0 +1,42 @@
+'.source.python':
+  'python3-executable':
+    'prefix': 'py3exec'
+    'body': """
+      #!/usr/bin/env python3
+      '''
+      $1
+      '''
+      import argparse
+      import sys
+      import traceback
+
+      from eglogging import *
+      logging_load_human_config()
+
+
+
+      def parse_command_line_args():
+
+        parser = argparse.ArgumentParser(description = '$1')
+
+        parser.add_argument('-f', '--file',
+                            default = 'input.yaml',
+                            help = '')
+
+        args = parser.parse_args()
+        return args
+
+
+
+      if __name__ == '__main__':
+        try:
+          args = parse_command_line_args()
+
+          $2
+
+        except Exception as ex:
+          CRITICAL("Exception: {}".format(ex))
+          traceback.print_exc()
+          sys.exit(1)
+
+    """
