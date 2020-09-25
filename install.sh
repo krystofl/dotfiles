@@ -13,6 +13,9 @@ sudo apt install -y git zsh pylint python3-pip python3-gpg synaptic \
                     software-properties-common apt-transport-https wget tmux \
                     gnome-tweak-tool chrome-gnome-shell mlocate tree
 
+# set python3 as the preferred option when running "python"
+sudo update-alternatives --install /usr/bin/python python /usr/bin/python3 10
+
 
 
 ######################## docker ############################
