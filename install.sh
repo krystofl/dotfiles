@@ -5,7 +5,7 @@
 
 ############################################################
 ###################### install packages ####################
-echo "\n\nInstalling packages..."
+echo -e "\n\nInstalling packages..."
 sudo apt update
 sudo apt install -y git zsh pylint python3-pip python3-gpg synaptic \
                     gnome-terminal imagemagick curl exfat-utils gthumb \
@@ -18,7 +18,7 @@ sudo apt install -y git zsh pylint python3-pip python3-gpg synaptic \
 ######################## docker ############################
 # from https://docs.docker.com/engine/install/ubuntu/#install-using-the-repository
 
-echo "\n\nInstalling docker..."
+echo -e "\n\nInstalling docker..."
 # install prereqs
 sudo apt-get update
 sudo apt-get install -y \
@@ -44,19 +44,22 @@ sudo apt-get install -y docker-ce docker-ce-cli containerd.io
 # allow running docker as a non-root user
 sudo groupadd docker
 sudo usermod -aG docker $USER
-newgrp docker
 
+# log in to the new group "docker"
+# this starts a new session, so it's undesirable in a script
+# newgrp docker
+echo "NOTE: to finish docker installation, you need to log out and back in."
 
 
 ###################### install editors ####################
 # install emacs and its customizations
-echo "\n\nInstalling emacs..."
+echo -e "\n\nInstalling emacs..."
 pushd emacs
 ./install_emacs.sh
 popd # back here
 
 # install atom and its customizations
-echo "\n\nInstalling Atom..."
+echo -e "\n\nInstalling Atom..."
 pushd atom
 ./install_atom.sh
 popd # back here
@@ -70,13 +73,13 @@ gsettings set org.gnome.desktop.interface clock-show-date true
 
 
 ######################## python ############################
-echo "\n\nInstalling python packages..."
+echo -e "\n\nInstalling python packages..."
 sudo pip3 install virtualenv virtualenvwrapper
 
 
 
 ########################### git ############################
-echo "\n\nSetting git config..."
+echo -e "\n\nSetting git config..."
 
 # set up git
 # (does NOT set email address - I don't want it in the repo for privacy reasons)
@@ -89,10 +92,11 @@ git config --global push.default matching
 
 
 ########################### zsh ############################
-echo "\n\nInstalling and setting up zsh..."
+echo -e "\n\nInstalling and setting up zsh..."
 
 # download Oh-My-Zsh
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+curl -Lo install_oh-my-zsh.sh https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh
+sh ./install_oh-my-zsh.sh --unattended
 
 # zsh theme
 cp krystof-bira.zsh-theme krystof-simple.zsh-theme ~/.oh-my-zsh/themes
@@ -103,5 +107,5 @@ chsh -s $(which zsh)
 
 
 ################# install dotfiles #########################
-echo "\n\nInstalling dotfiles..."
+echo -e "\n\nInstalling dotfiles..."
 cp ./.zshrc ./.bashrc ./.gdbinit ./.pylintrc ~
