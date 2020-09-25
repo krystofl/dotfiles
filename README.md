@@ -79,15 +79,9 @@ If you haven't (and don't want to) run `install.sh`, also run these:
 
 ## Python
 
-`install.sh` installs Python's virtualenv and virtualenvwrapper libs, but there is a problem: virtualenvwrapper wants to run for the result of `which python`, but Atom forces `python` to be `python2`, while we want to use virtualenvwrapper for `python3`.
+`install.sh` installs Python's virtualenv and virtualenvwrapper libs.
 
-To fix this, edit `/usr/local/bin/virtualenvwrapper.sh` to tell it to look for `python3`. The relevant line (line no. 50 as of this writing) should read
-
-    VIRTUALENVWRAPPER_PYTHON="$(command \which python3)"
-
-...where before it looked for just `python`.
-
-Note that the virtualenvwrapper zsh plugin will automatically activate a virtualenv that maches the name of a directory, or you can manually set the virtualenv to activate using a `.venv` file
+The virtualenvwrapper zsh plugin will automatically activate a virtualenv that maches the name of a directory, or you can manually set the virtualenv to activate using a `.venv` file
 ([docs](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/virtualenvwrapper#virtualenvwrapper-plugin)).
 
 virtualenvwrapper command reference:
