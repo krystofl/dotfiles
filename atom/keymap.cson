@@ -8,3 +8,6 @@
   'alt-up'         : 'window:focus-pane-above'
   'alt-down'       : 'window:focus-pane-below'
   'ctrl-l'         : 'simple-center-screen:toggle'
+'atom-text-editor[data-grammar="text md"]':
+  'ctrl-b': 'markdown:strong-emphasis'
+  'ctrl-i': 'markdown:emphasis'
