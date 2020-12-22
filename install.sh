@@ -73,6 +73,11 @@ popd # back here
 # show the date in the top panel
 gsettings set org.gnome.desktop.interface clock-show-date true
 
+# turn on warmer screen colors at night between sunset and sunrise
+gsettings set org.gnome.settings-daemon.plugins.color night-light-enabled true
+gsettings set org.gnome.settings-daemon.plugins.color night-light-schedule-automatic true
+gsettings set org.gnome.settings-daemon.plugins.color night-light-temperature 4000
+
 
 
 ######################## python ############################
