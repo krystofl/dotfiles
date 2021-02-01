@@ -137,3 +137,8 @@ AutoKey is a desktop automation utility for Linux and X11.
 
 For instructions and scripts (setup for Jeepney),
 see the `jeepney/autokey` folder.
+
+
+## Tweak which icons are shown/hidden in the top menu
+
+Use the [Icon Hider Extension](https://extensions.gnome.org/extension/351/icon-hider/)
