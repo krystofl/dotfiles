@@ -90,6 +90,18 @@ virtualenvwrapper command reference:
 - `mkvirtualenv ENVNAME` - make a virtualenv called ENVNAME
 - `rmvirtualenv ENVNAME` - delete the virtualenv ENVNAME
 
+For `mkvirtualenv`, you can specify a specific version of python to use like so: `mkvirtualenv -p python3.8 VENV_NAME`
+
+
+### Configuring which version of python virtualenvs should use
+
+This is helpful on Ubuntu 18.04 if you want to use python 3, or if you want to use the non-default version of python.
+In general, changing the default version of python on Ubuntu is NOT a good idea - it can really break your system in pretty horrible ways (speaking from experience here).
+
+To configure which version of python virtualenvs use, edit `/usr/local/bin/virtualenvwrapper.sh`. For example, to use python3.8, set the `VIRTUALENVWRAPPER_PYTHON` variable (line 50 as of this writing) like so:
+
+    VIRTUALENVWRAPPER_PYTHON="$(command \which python3.8)"
+
 
 
 # Misc
@@ -142,3 +154,11 @@ see the `jeepney/autokey` folder.
 ## Tweak which icons are shown/hidden in the top menu
 
 Use the [Icon Hider Extension](https://extensions.gnome.org/extension/351/icon-hider/)
+
+
+
+## revert to traditional Alt-Tab behavior on Ubuntu 18.04
+
+go to settings -> Keyboard. In the Navigation section...
+  disable the shortcut for "Switch applications"
+  set the shortcut for "Switch windows" to Alt + Tab
