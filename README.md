@@ -120,9 +120,15 @@ Start and stop microk8s with `microk8s start` and `microk8s stop`
 ## Nvidia drivers
 
 The results with Nvidia drivers are sometimes unpredictable.
-If you feel a need to install them, one way to do it is
+One recommended way to install drivers is to run
 
-    sudo apt-get install nvidia-current
+    ubuntu-drivers devices
+
+to see the list of devices and their recommended drivers.
+
+To automatically install the recommended drivers, run
+
+    sudo ubuntu-drivers autoinstall
 
 
 ## grub customizer
