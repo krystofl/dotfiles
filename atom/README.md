@@ -39,7 +39,7 @@ Panes:
 - Delete line: Ctrl+Shift+K
 - Align multi-line selection - Ctrl+Alt+A (from atom-alignment)
 - center editor window on cursor: Ctrl+L (from simple-center-screen)
--
+- comment/uncomment line or selection: Ctrl+/
 
 Multiple cursors:
 - Alt+Shift+Up/Down - Add another cursor above/below the current cursor
