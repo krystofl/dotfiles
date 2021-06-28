@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 # Install Signal per the official instructions:
 # https://signal.org/download/#
 
