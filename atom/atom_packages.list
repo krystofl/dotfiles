@@ -2,6 +2,7 @@ advanced-open-file@0.16.8
 atom-alignment@0.13.0
 autocomplete-python-jedi@1.10.3-0
 busy-signal@2.0.1
+ftp-remote-edit@0.18.2
 intentions@1.1.5
 language-cmake@1.2.0
 language-docker@1.1.8

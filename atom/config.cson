@@ -23,14 +23,15 @@
     projectHome: "/home/krystof/code"
     telemetryConsent: "no"
   editor:
-    autoIndentOnPaste: false
     scrollPastEnd: true
     scrollSensitivity: 100
     showIndentGuide: true
-    showLineNumbers: false
     tabType: "soft"
   "exception-reporting":
     userId: "59b128a1-3475-4b7d-9f80-1840c9a9d144"
+  "ftp-remote-edit":
+    config: "da6d10bb37718ab4a4143003eb583d2c1749d9266376458d0373c765dcc74bd68393beb24f324b8d61842a031fb9115c794cdfa5323edf9a11cbc02f55e9b7f93e6d3f8f0da39a8769f8597fa6e5decee086e1c88e9020d4e9156e4ebb64aaca37cec42a5d9c5212942d9630c833db903b8c14cd3f8d9e99908ae37098b671e1fc795a04f86b2ab79daab117c7358c36ae029a131b42ee8189bd1bc1d74884a025b318a6985b126c95d1888bd2ead135085f09f0882436280b9a00ab0dae20cca31719f1efb5425669f91779120ef3ae92f75662e87df63a7f3c63d222772bc0cd889f5309d46253cd8ece072cc41784e97482af1104adc34346e1935293e6cea3c6ec449de3e9141f6d73"
+    password: "cd2a12f936228ebaa1532a56ba006921"
   "linter-eslint":
     disabling:
       disableWhenNoEslintConfig: false
