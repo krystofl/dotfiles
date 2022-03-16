@@ -11,7 +11,7 @@ Change the terminal background and enable unlimited scrolling.
 ## Make an ssh key & add it to github
 [Detailed instructions](https://help.github.com/articles/generating-ssh-keys/):
 
-    ssh-keygen -t rsa -b 4096 -C "EMAIL_ADDRESS | COMPUTER_NAME"
+    ssh-keygen -t ed25519 -C "EMAIL_ADDRESS | COMPUTER_NAME"
     eval $(ssh-agent -s)
     ssh-add ~/.ssh/id_rsa
 
