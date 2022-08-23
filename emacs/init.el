@@ -8,7 +8,6 @@
 
 ;; Cask for package management
 (require 'cask "~/.cask/cask.el")
-(cask-initialize)
 
 
 ;; set default python indentation to two spaces
@@ -130,7 +129,6 @@
 (global-set-key [f7] 'toggle-source-header)
 (global-set-key [f4] 'goto-line)
 
-(set-default-font "7x14")
 (set-background-color "Black")
 (set-foreground-color "White")
 (set-cursor-color "White")
@@ -174,7 +172,7 @@
 
 
 ; start flycheck syntax checker
-(add-hook 'after-init-hook #'global-flycheck-mode)
+;; (add-hook 'after-init-hook #'global-flycheck-mode)
 
 
 ; start package.el package manager with emacs
