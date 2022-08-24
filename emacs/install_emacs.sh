@@ -7,7 +7,7 @@
 # (this will need to be updated on future major version releases)
 sudo add-apt-repository ppa:kelleyk/emacs -y
 sudo apt-get update
-sudo apt install -y emacs27
+sudo apt install -y emacs28
 
 
 
@@ -20,8 +20,10 @@ cp ./init.el Cask ~/.emacs.d/
 ######################### install packages #####################################
 # use Cask - https://github.com/cask/cask
 # install cask
-curl -fsSL https://raw.githubusercontent.com/cask/cask/master/go | python
-export PATH="$HOME/.cask/bin:$PATH"
+git clone https://github.com/cask/cask
+mkdir -p ~/.local/bin
+make -C cask install
+export PATH="$HOME/.local/bin:$PATH"
 
 # install packages using cask
 pushd ~/.emacs.d
@@ -30,3 +32,4 @@ popd # back to here
 
 # install a markdown renderer - needed by the markdown-mode package
 #sudo apt install markdown
+
