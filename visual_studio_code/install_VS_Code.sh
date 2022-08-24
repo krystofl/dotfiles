@@ -12,10 +12,10 @@ sudo apt update
 sudo apt install code
 
 # install settings and keybindings
-cp *.json ~/.config/Code/User/
+# cp *.json ~/.config/Code/User/
 
 # install extensions
 # from https://superuser.com/a/1452176/
 # to generate vs_code_extensions_list.txt, run:
 # rm vs_code_extensions_list.txt && code --list-extensions >> vs_code_extensions_list.txt
-cat vs_code_extensions_list.txt | xargs -n 1 code --install-extension
+# cat vs_code_extensions_list.txt | xargs -n 1 code --install-extension
