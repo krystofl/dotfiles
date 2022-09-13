@@ -29,6 +29,9 @@ These are some Keybindings I used frequently.
 - Cut line: Ctrl + X
 - autoindent document: Ctrl + Shift + I
 - open terminal: Ctrl + Shift + `
+- fold/unfold expand/collapse code section: Ctrl + Shift + `[` or `]`
+- preview markdown: Ctrl + Shift + V
+- find in project: Ctrl + Shift + F
 
 
 **Custom keybindings:**
