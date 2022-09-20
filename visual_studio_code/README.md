@@ -32,6 +32,9 @@ These are some Keybindings I used frequently.
 - fold/unfold expand/collapse code section: Ctrl + Shift + `[` or `]`
 - preview markdown: Ctrl + Shift + V
 - find in project: Ctrl + Shift + F
+- add multiple cursors: Ctrl + Alt + Up/Down
+- show function paremeter hints: Ctrl + Shift + Space
+- align on characters (e.g. by =): Alt + = (from Alignment extension)
 
 
 **Custom keybindings:**
@@ -40,6 +43,7 @@ These are some Keybindings I used frequently.
 - Make current window smaller: Alt + [
 
 - center window on cursor: Ctrl + L
+- duplicate selection: Ctrl + Shift + D
 
 
 ## Working in WSL
