@@ -35,6 +35,7 @@ These are some Keybindings I used frequently.
 - add multiple cursors: Ctrl + Alt + Up/Down
 - show function paremeter hints: Ctrl + Shift + Space
 - align on characters (e.g. by =): Alt + = (from Alignment extension)
+- show inlay hints: Ctrl + Alt (while held)
 
 
 **Custom keybindings:**
