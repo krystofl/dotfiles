@@ -36,6 +36,7 @@ These are some Keybindings I used frequently.
 - show function paremeter hints: Ctrl + Shift + Space
 - align on characters (e.g. by =): Alt + = (from Alignment extension)
 - show inlay hints: Ctrl + Alt (while held)
+- duplicate a line: Shift + Alt + up/down
 
 
 **Custom keybindings:**
