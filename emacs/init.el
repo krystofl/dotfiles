@@ -7,7 +7,7 @@
 
 
 ;; Cask for package management
-(require 'cask "~/.cask/cask.el")
+;;(require 'cask "~/.cask/cask.el")
 
 
 ;; set default python indentation to two spaces
@@ -161,7 +161,7 @@
   ;; Your init file should contain only one such instance.
   ;; If there is more than one, they won't work right.
  '(cua-mode t nil (cua-base))
-  '(package-selected-packages (quote (dockerfile-mode flycheck)))
+  ;; '(package-selected-packages (quote (dockerfile-mode flycheck)))
  '(tool-bar-mode nil))
 (custom-set-faces
   ;; custom-set-faces was added by Custom.
@@ -176,11 +176,11 @@
 
 
 ; start package.el package manager with emacs
-(require 'package)
+;;(require 'package)
 ; add MELPA repo
-(add-to-list 'package-archives '("melpa" . "http://melpa.milkbox.net/packages/"))
+;;(add-to-list 'package-archives '("melpa" . "http://melpa.milkbox.net/packages/"))
 ; init package.el
-(package-initialize)
+;;(package-initialize)
 
 
 (custom-set-faces

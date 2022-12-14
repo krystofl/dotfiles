@@ -9,12 +9,12 @@ echo -e "\n\nInstalling packages..."
 sudo apt update
 sudo apt install -y git zsh pylint python3-pip python3-gpg synaptic \
                     gnome-terminal imagemagick curl exfat-utils gthumb \
-                    konversation unrar fbreader gimp vlc \
+                    unrar fbreader gimp vlc \
                     software-properties-common apt-transport-https wget tmux \
                     gnome-tweak-tool chrome-gnome-shell mlocate tree net-tools
 
 # set python3 as the preferred option when running "python"
-sudo update-alternatives --install /usr/bin/python python /usr/bin/python3 10
+# sudo update-alternatives --install /usr/bin/python python /usr/bin/python3 10
 
 
 
@@ -62,9 +62,15 @@ pushd emacs
 popd # back here
 
 # install atom and its customizations
-echo -e "\n\nInstalling Atom..."
-pushd atom
-./install_atom.sh
+#echo -e "\n\nInstalling Atom..."
+#pushd atom
+#./install_atom.sh
+#popd # back here
+
+# install VS Code
+echo -e "\n\nInstalling VS Code..."
+pushd visual_studio_code
+./install_VS_Code.sh
 popd # back here
 
 

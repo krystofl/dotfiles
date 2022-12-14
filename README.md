@@ -13,7 +13,7 @@ Change the terminal background and enable unlimited scrolling.
 
     ssh-keygen -t ed25519 -C "EMAIL_ADDRESS | COMPUTER_NAME"
     eval $(ssh-agent -s)
-    ssh-add ~/.ssh/id_rsa
+    ssh-add ~/.ssh/id_ed25519
 
 Then add the key on [github](https://github.com/settings/keys)
 
