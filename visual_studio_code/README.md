@@ -18,17 +18,12 @@ These are some Keybindings I used frequently.
 - Quick Open: Ctrl + P
 - Open folder: Ctrl + K , Ctrl + O
 - Zen mode: Ctrl+K Z
-- Split editor vertically: Ctrl + \
-- Split editor horizontally: Ctrl + K  Ctrl + \
-- Go to next editor: Ctrl + PageDown
-- Go to previous editor: Ctrl + PageUp
-- Close window: Ctrl + W
-- Ctrl+K W: close all editors in the editor group
 - Ctrl + K Ctrl + S: open keyboard shortcuts list
 - Ctrl + K Ctrl + X: trim trailing whitespace
 - Cut line: Ctrl + X
 - autoindent document: Ctrl + Shift + I
-- open terminal: Ctrl + Shift + `
+- open new terminal: Ctrl + Shift + `
+- make active an already-open terminal: Ctrl + `
 - fold/unfold expand/collapse code section: Ctrl + Shift + `[` or `]`
 - preview markdown: Ctrl + Shift + V
 - find in project: Ctrl + Shift + F
@@ -37,6 +32,19 @@ These are some Keybindings I used frequently.
 - align on characters (e.g. by =): Alt + = (from Alignment extension)
 - show inlay hints: Ctrl + Alt (while held)
 - duplicate a line: Shift + Alt + up/down
+- search through all files in open project: Ctrl + Shift + F
+- go to function definition: F12
+
+
+***Editor panes & tabs***
+
+- Split editor vertically: Ctrl + \
+- Split editor horizontally: Ctrl + K  Ctrl + \
+- Go to specific editor tab: Ctrl + 1 / 2 / 3 ...
+- Go to next editor: Ctrl + PageDown
+- Go to previous editor: Ctrl + PageUp
+- Close window: Ctrl + W
+- Ctrl+K W: close all editors in the editor group
 
 
 **Custom keybindings:**
