@@ -91,8 +91,9 @@ esac
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
 
-# open the current folder as a project in a new window in Atom
-alias atin='atom -n . &'
+# open the current folder as a project in a new window in an editor
+#alias atin='atom -n . &'
+alias cod='code . &'
 
 # shorthand for common ls command
 alias lh='ls -lh'

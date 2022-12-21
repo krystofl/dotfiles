@@ -114,7 +114,8 @@ if ! shopt -oq posix; then
   fi
 fi
 
-# open the current folder as a project in a new window in Atom
-alias atin='atom -n . &'
+# open the current folder as a project in a new window in an editor
+#alias atin='atom -n . &'
+alias cod='code . &'
 
 alias mkc='microk8s kubectl'
