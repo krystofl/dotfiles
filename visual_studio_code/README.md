@@ -70,3 +70,9 @@ Follow this process: https://code.visualstudio.com/docs/remote/wsl
 - [Linting](https://code.visualstudio.com/docs/python/linting)
   - [How to use a specific `pylintrc` file](https://stackoverflow.com/a/64200814/)
 - [Debugging](https://code.visualstudio.com/docs/python/debugging)
+- use `Python: Select Interpreter` command to set interpreter (e.g. to use a virtual env)
+- run selected code in python terminal: `Shift + Enter`
+- rename a module: right-click in the code explorer --> rename --> follow prompts
+- sort import: run `Python Refactor: Sort Imports` command
+- [working with Jupyter notebooks](https://code.visualstudio.com/docs/python/jupyter-support-py)
+
