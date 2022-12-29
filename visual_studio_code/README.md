@@ -17,13 +17,10 @@ These are some Keybindings I used frequently.
 - Command pallette: Ctrl + Shift + P
 - Quick Open: Ctrl + P
 - Open folder: Ctrl + K , Ctrl + O
-- Zen mode: Ctrl+K Z
 - Ctrl + K Ctrl + S: open keyboard shortcuts list
 - Ctrl + K Ctrl + X: trim trailing whitespace
 - Cut line: Ctrl + X
 - autoindent document: Ctrl + Shift + I
-- open new terminal: Ctrl + Shift + `
-- make active an already-open terminal: Ctrl + `
 - fold/unfold expand/collapse code section: Ctrl + Shift + `[` or `]`
 - preview markdown: Ctrl + Shift + V
 - find in project: Ctrl + Shift + F
@@ -33,10 +30,10 @@ These are some Keybindings I used frequently.
 - show inlay hints: Ctrl + Alt (while held)
 - duplicate a line: Shift + Alt + up/down
 - search through all files in open project: Ctrl + Shift + F
-- go to function definition: F12
+- go to function or variable definition: F12
 
 
-***Editor panes & tabs***
+**Editor panes & tabs**
 
 - Split editor vertically: Ctrl + \
 - Split editor horizontally: Ctrl + K  Ctrl + \
@@ -45,17 +42,31 @@ These are some Keybindings I used frequently.
 - Go to previous editor: Ctrl + PageUp
 - Close window: Ctrl + W
 - Ctrl+K W: close all editors in the editor group
+- Zen mode: Ctrl+K Z
 
 
 **Custom keybindings:**
 
 - Make current window bigger: Alt + ]
 - Make current window smaller: Alt + [
-
 - center window on cursor: Ctrl + L
 - duplicate selection: Ctrl + Shift + D
+
+
+**Built-in Terminal**
+
+- open new terminal: Ctrl + Shift + `
+- make active an already-open terminal: Ctrl + `
+- split terminal vertically (when terminal is selected): Ctrl + Shift + 5
 
 
 ## Working in WSL
 
 Follow this process: https://code.visualstudio.com/docs/remote/wsl
+
+
+## Python workflows
+
+- [Linting](https://code.visualstudio.com/docs/python/linting)
+  - [How to use a specific `pylintrc` file](https://stackoverflow.com/a/64200814/)
+- [Debugging](https://code.visualstudio.com/docs/python/debugging)
