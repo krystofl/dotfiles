@@ -48,7 +48,9 @@ DISABLE_AUTO_TITLE="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git virtualenvwrapper)
+plugins=(git virtualenvwrapper timer)
+export TIMER_THRESHOLD=3
+export TIMER_PRECISION=0
 
 source $ZSH/oh-my-zsh.sh
 
