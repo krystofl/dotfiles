@@ -1,14 +1,16 @@
 #!/usr/bin/env bash
 
-
 # NOTE: this script assumes that it is run from its directory (i.e. as `./install.sh`)
+
+# exit on errors
+set -e
 
 ############################################################
 ###################### install packages ####################
 echo -e "\n\nInstalling packages..."
 sudo apt update
 sudo apt install -y git zsh pylint python3-pip python3-gpg synaptic \
-                    gnome-terminal imagemagick curl exfat-utils gthumb \
+                    gnome-terminal imagemagick curl gthumb \
                     unrar fbreader gimp vlc \
                     software-properties-common apt-transport-https wget tmux \
                     gnome-tweak-tool chrome-gnome-shell mlocate tree net-tools
