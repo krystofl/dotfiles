@@ -16,7 +16,7 @@ sudo apt install -y git zsh pylint python3-pip python3-gpg synaptic \
                     gnome-tweak-tool chrome-gnome-shell mlocate tree net-tools
 
 # set python3 as the preferred option when running "python"
-# sudo update-alternatives --install /usr/bin/python python /usr/bin/python3 10
+sudo update-alternatives --install /usr/bin/python python /usr/bin/python3 10
 
 
 
