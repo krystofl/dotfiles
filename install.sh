@@ -9,7 +9,6 @@ script_dir=$(dirname "$0"); cd "$script_dir" || exit 1; script_dir=$(pwd)
 #===============================================================================
 # in : $@ (same as the script)
 # out: exit_code
-#-------------------------------------------------------------------------------
 main () {
 
     parse_args "$@"
@@ -43,7 +42,6 @@ main () {
 # Parse arguments
 # in : $@ (same as the script)
 # out: GIT_EMAIL
-#-------------------------------------------------------------------------------
 parse_args() {
 
     # email to use for git config
@@ -260,18 +258,6 @@ check_wsl () {
 
 
 # =============================================================================
-# log an ERROR message
-log_error () {
-    echo -e "ERROR $1"
-}
-
-# =============================================================================
-# log an info message
-log_info () {
-    echo -e "$1"
-}
-
-# =============================================================================
 # called in case of exit due to an error
 wrap_up () {
     # set the exit code to the result of the last command that ran
@@ -285,6 +271,8 @@ wrap_up () {
 
 # if any errors happen, call wrap up before exiting
 trap 'wrap_up' EXIT
+
+source "$script_dir"/utils.sh
 
 # call the main() function
 main "$@"
