@@ -31,6 +31,10 @@ Reading this guide:
 - **search file**: `C-s` (forward) or `C-r` (backward)
 - **search & replace**: `Alt + Shift + 5`
 - **set mark**: `C- Space`
+- cut text: `C-w`
+- copy text: `M-w`
+- paste text: `C-y`
+
 - **auto-complete**: `Alt + Enter`
 - **go to line**: `Alt + G`
 - undo: `C-z` **CHANGE THIS: moves emacs to background when run in terminal**
