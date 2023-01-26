@@ -12,10 +12,7 @@ to go to...
 # Command Mode
 
 ## Moving Around
-- h moves the cursor one character to the left.
-- j moves the cursor down one line.
-- k moves the cursor up one line.
-- l moves the cursor one character to the right.
+
 - 0 moves the cursor to the beginning of the line.
 - $ moves the cursor to the end of the line.
 - w move forward one word.
@@ -23,6 +20,7 @@ to go to...
 - G move to the end of the file.
 - gg move to the beginning of the file.
 - `. move to the last edit.
+- `<NUMBER> G` - go to line `<NUMBER>`
 
 Prefacing a movement command with a number will execute that movement multiple times. So, if you want to move up six lines, enter 6k.
 
