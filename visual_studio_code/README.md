@@ -37,11 +37,11 @@ These are some Keybindings I used frequently.
 
 - Split editor vertically: Ctrl + \
 - Split editor horizontally: Ctrl + K  Ctrl + \
-- Go to specific editor tab: Ctrl + 1 / 2 / 3 ...
+- Go to specific pane: Ctrl + 1 / 2 / 3 ...
 - Go to next editor: Ctrl + PageDown
 - Go to previous editor: Ctrl + PageUp
-- Close window: Ctrl + W
-- Ctrl+K W: close all editors in the editor group
+- Close editor (tab): Ctrl + W
+- Ctrl+K W: close all editors (tabs) in the pane
 - Zen mode: Ctrl+K Z
 
 
