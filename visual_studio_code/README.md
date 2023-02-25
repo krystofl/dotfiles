@@ -76,3 +76,11 @@ Follow this process: https://code.visualstudio.com/docs/remote/wsl
 - sort import: run `Python Refactor: Sort Imports` command
 - [working with Jupyter notebooks](https://code.visualstudio.com/docs/python/jupyter-support-py)
 
+
+## Jenkins
+
+Validate the open pipeline file: `Ctrl + Shift + P --> Validate Jenkinsfile`
+
+The URL is `JENKINS_URL/pipeline-model-converter/validate`
+
+This uses the [Jenkins Pipeline Linter Connector](https://marketplace.visualstudio.com/items?itemName=janjoerke.jenkins-pipeline-linter-connector)
