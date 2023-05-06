@@ -25,11 +25,13 @@ Windows in tmux work similarly to tabs in the terminal
 
 
 ## Sessions
-- C-b d - detach current session, leaving processes running in the background
+- C-b d - detach current session, leaving processes running in the background.
+  Same as `tmux detach`.
+- `tmux attach -t SOMENAME` - attach to session SOMENAME
+   (from `tmux ls` output; default names are ints).
+   If there's just one session, can also just run `tmux attach`.
 - C-b C-z - suspend session (change this? It's too similar to zen mode)
 - `tmux ls` - list sessions
-- `tmux attach -t SOMENAME` - attach to session SOMENAME
-   (from `tmux ls` output; default names are ints)
 - `tmux new -s HACKING` - create a new session named HACKING
 - `tmux rename-session -t 0 HACKING` - rename session 0 to HACKING
 

@@ -18,19 +18,12 @@ main () {
     check_wsl
 
     install_packages
-
     install_docker
-
     install_editors
-
     set_gnome_settings
-
     setup_git
-
     setup_python
-
     setup_zsh
-
     install_dotfiles
 
     # if we got here, all is well
