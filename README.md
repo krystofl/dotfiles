@@ -105,6 +105,11 @@ To configure which version of python virtualenvs use, edit `/usr/local/bin/virtu
 
 # Misc
 
+## Gnome Extensions
+
+- [Focus My Window](https://extensions.gnome.org/extension/1005/focus-my-window/)
+
+
 ## Microk8s
 
 To install [Microk8s](https://microk8s.io/), you can run `./install_microk8s.sh`
