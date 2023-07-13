@@ -147,7 +147,7 @@ setup_zsh () {
 # out: none
 install_dotfiles () {
     log_info "\n\nInstalling dotfiles..."
-    cp ./.zshrc ./.bashrc ./.gdbinit ./.pylintrc ~
+    cp ./.zshrc ./.bashrc ./.gdbinit ./.pylintrc ./.tmux.conf ~
 }
 
 
