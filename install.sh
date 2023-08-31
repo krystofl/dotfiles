@@ -129,7 +129,7 @@ setup_git () {
 setup_zsh () {
     log_info "\n\nInstalling and setting up zsh..."
 
-    download Oh-My-Zsh
+    # download Oh-My-Zsh
     curl -Lo install_oh-my-zsh.sh https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh
     sh ./install_oh-my-zsh.sh --unattended
 
