@@ -75,6 +75,7 @@ Follow this process: https://code.visualstudio.com/docs/remote/wsl
 - rename a module: right-click in the code explorer --> rename --> follow prompts
 - sort import: run `Python Refactor: Sort Imports` command
 - [working with Jupyter notebooks](https://code.visualstudio.com/docs/python/jupyter-support-py)
+- run and debug python file: `Alt + X` (custom)
 
 
 ## Jenkins
