@@ -193,7 +193,7 @@ install_docker () {
 
     # update package index and install docker
     sudo apt-get update
-    sudo apt-get install -y docker-ce docker-ce-cli containerd.io
+    sudo apt-get install -y docker-ce docker-ce-cli containerd.io docker-compose-plugin
 
     # allow running docker as a non-root user
     sudo groupadd docker
