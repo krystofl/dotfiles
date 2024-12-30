@@ -50,7 +50,11 @@ which get installed by `install.sh`
   [Chrome](https://chrome.google.com/webstore/detail/gnome-shell-integration/gphhapmejobijbbhgpjhcjognlahblep)
 
 
-For 19.04 and higher:
+For 24.04 and higher:
+* Gnome extensions have been moved to a dedicated "Gnome Extensions" application. Open it,
+  go to Workspace Matrix settings, and configure as needed.
+
+For 19.04 - 22.04:
 * Go to https://extensions.gnome.org/extension/1485/workspace-matrix/ and
   install the extension
 * configure workspaces from Tweaks -> Extensions -> Workspace Matrix (gear icon).
