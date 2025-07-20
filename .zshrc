@@ -56,7 +56,8 @@ source $ZSH/oh-my-zsh.sh
 
 # stuff for python's virtualenv and virtualenvwrapper
 export WORKON_HOME=$HOME/.virtualenvs
-source /usr/local/bin/virtualenvwrapper.sh
+# source /usr/local/bin/virtualenvwrapper.sh
+source /usr/share/virtualenvwrapper/virtualenvwrapper.sh
 
 
 # User configuration

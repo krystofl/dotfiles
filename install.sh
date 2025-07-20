@@ -76,7 +76,7 @@ install_packages () {
     sudo apt install -y git zsh pylint python3-pip python3-gpg \
                         gnome-terminal imagemagick curl \
                         software-properties-common apt-transport-https wget \
-                        tmux mlocate tree net-tools unrar
+                        tmux tree net-tools unrar
 
     # if not on WSL, install some additional packages
     if [ "$ON_WSL" = false ] ; then
@@ -157,11 +157,10 @@ install_dotfiles () {
 # out: none
 setup_python () {
     log_info "\n\nInstalling python packages..."
-
     # set python3 as the preferred option when running "python"
-    sudo update-alternatives --install /usr/bin/python python /usr/bin/python3 10
+    # sudo update-alternatives --install /usr/bin/python python /usr/bin/python3 10
 
-    sudo pip3 install virtualenv virtualenvwrapper
+    sudo apt install python3-virtualenv python3-virtualenvwrapper
 }
 
 
@@ -196,7 +195,7 @@ install_docker () {
     sudo apt-get install -y docker-ce docker-ce-cli containerd.io docker-compose-plugin
 
     # allow running docker as a non-root user
-    sudo groupadd docker
+    sudo groupadd docker || true
     sudo usermod -aG docker $USER
 
     # log in to the new group "docker"
